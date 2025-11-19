@@ -157,7 +157,7 @@ export function Footer() {
 
               {/* Time */}
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A] tracking-wide mb-4 sm:mb-5">
-                4 O'CLOCK
+                4:00 PM
               </p>
 
               {/* Bottom decorative line */}
@@ -240,7 +240,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-4 h-4 text-[#1A1A1A]/70" />
-                  <span>4 O'CLOCK</span>
+                  <span>4:00 PM</span>
                 </div>
               </div>
             </motion.div>

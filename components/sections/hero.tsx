@@ -70,7 +70,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 md:gap-3 text-[#3C3C3C]">
               <span className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] uppercase tracking-wider">SUNDAY</span>
               <span className="text-5xl sm:text-5xl md:text-6xl font-[family-name:var(--font-crimson)] font-light my-1 sm:my-0">11</span>
-              <span className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] uppercase tracking-wider">4 O'CLOCK</span>
+              <span className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] uppercase tracking-wider">4:00 PM</span>
             </div>
             
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-light text-[#3C3C3C]">
