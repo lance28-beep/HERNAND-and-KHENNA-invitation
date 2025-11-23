@@ -289,12 +289,12 @@ export function GuestList() {
   return (
     <Section
       id="guest-list"
-      className="relative z-[60] isolate py-12 sm:py-16 md:py-20 lg:py-24 bg-transparent overflow-visible"
+      className="relative z-[60] isolate py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent overflow-visible"
     >
       {/* Section Header */}
-      <div className="relative z-10 text-center mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6">
+      <div className="relative z-10 text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6">
         <h2
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-white mb-6 sm:mb-8 uppercase tracking-[0.12em] sm:tracking-[0.15em]"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-white mb-4 sm:mb-6 uppercase tracking-[0.12em] sm:tracking-[0.15em]"
           style={{
             textShadow:
               "0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5)",
@@ -303,9 +303,9 @@ export function GuestList() {
           RSVP
         </h2>
 
-        <div className="space-y-4 sm:space-y-5">
+        <div className="space-y-3 sm:space-y-4">
           <p
-            className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-white font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4"
+            className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-white font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4"
             style={{
               textShadow:
                 "0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5)",
@@ -314,24 +314,18 @@ export function GuestList() {
             Please search for your name below to confirm your attendance and help us prepare for this special celebration
           </p>
           <p
-            className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-white/90 font-medium max-w-xl mx-auto leading-relaxed tracking-wide px-4"
+            className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/90 font-medium max-w-xl mx-auto leading-relaxed tracking-wide px-4"
             style={{
               textShadow:
                 "0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5)",
             }}
           >
             Please confirm by January 1, 2025
+            <div>
+                  <span className="font-semibold"></span> Renee & Steven
+                  <span className="font-semibold"></span> +639271655509 | +639665949009
+                </div>
           </p>
-          {/* <div
-            className="flex items-center justify-center gap-2 text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/90 font-light"
-            style={{
-              textShadow:
-                "0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
-            <span>Contact us at: 09088993835 / 09453324669</span>
-          </div> */}
         </div>
       </div>
 
@@ -346,17 +340,17 @@ export function GuestList() {
             style={{ overflow: "visible" }}
           >
             {/* Card content */}
-            <div className="relative p-6 sm:p-8 md:p-10 lg:p-12">
-              <div className="relative z-10 space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#1A1A1A] p-2 rounded-xl shadow-lg">
-                    <Search className="h-5 w-5 text-[#E8DCC8]" />
+            <div className="relative p-4 sm:p-6 md:p-8 lg:p-10">
+              <div className="relative z-10 space-y-4 sm:space-y-5">
+                <div className="flex items-center gap-2.5 sm:gap-3">
+                  <div className="bg-[#D5BBAE] p-1.5 sm:p-2 rounded-xl shadow-lg">
+                    <Search className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                   </div>
                   <div>
-                    <label className="block text-base sm:text-lg font-semibold text-[#1A1A1A] font-[family-name:var(--font-crimson)] mb-1">
+                    <label className="block text-sm sm:text-base md:text-lg font-semibold text-[#1A1A1A] font-[family-name:var(--font-crimson)] mb-0.5 sm:mb-1">
                       Find Your Name
                     </label>
-                    <p className="text-xs sm:text-sm text-[#1A1A1A]/70 font-[family-name:var(--font-crimson)]">
+                    <p className="text-[10px] sm:text-xs text-[#1A1A1A]/70 font-[family-name:var(--font-crimson)]">
                       Type as you search to see instant results
                     </p>
                   </div>
@@ -373,7 +367,7 @@ export function GuestList() {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder="Type your name..."
-                      className="w-full pl-10 sm:pl-14 pr-3 sm:pr-6 py-3.5 sm:py-5 border-2 border-[#1A1A1A]/30 focus:border-[#1A1A1A] rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] placeholder:text-[#1A1A1A]/40 transition-all duration-300 hover:border-[#1A1A1A]/50 focus:ring-4 focus:ring-[#1A1A1A]/10 bg-white shadow-inner focus:shadow-lg"
+                      className="w-full pl-9 sm:pl-12 pr-3 sm:pr-5 py-2.5 sm:py-3.5 md:py-4 border-2 border-[#1A1A1A]/30 focus:border-[#1A1A1A] rounded-lg sm:rounded-xl text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] placeholder:text-[#1A1A1A]/40 transition-all duration-300 hover:border-[#1A1A1A]/50 focus:ring-4 focus:ring-[#1A1A1A]/10 bg-white shadow-inner focus:shadow-lg"
                     />
                   </div>
                   {/* Autocomplete dropdown */}
@@ -394,8 +388,8 @@ export function GuestList() {
                             className="w-full px-4 sm:px-5 py-3.5 sm:py-4 text-left hover:bg-[#1A1A1A]/10 active:bg-[#1A1A1A]/20 transition-all duration-200 flex items-center gap-3 sm:gap-4 border-b border-[#1A1A1A]/10 last:border-b-0 group"
                           >
                             <div className="relative flex-shrink-0">
-                              <div className="bg-[#1A1A1A] p-1.5 sm:p-2 rounded-full shadow-md group-hover:shadow-lg transition-all duration-300">
-                                <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#E8DCC8]" />
+                              <div className="bg-[#D5BBAE] p-1.5 sm:p-2 rounded-full shadow-md group-hover:shadow-lg transition-all duration-300">
+                                <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-white" />
                               </div>
                             </div>
                             <div className="flex-1 min-w-0">
@@ -439,8 +433,8 @@ export function GuestList() {
                     >
                       <div className="p-4 sm:p-5">
                         <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
-                          <div className="bg-[#1A1A1A] p-1.5 sm:p-2 rounded-xl flex-shrink-0 shadow-md">
-                            <UserPlus className="h-4 w-4 sm:h-5 sm:w-5 text-[#E8DCC8]" />
+                          <div className="bg-[#D5BBAE] p-1.5 sm:p-2 rounded-xl flex-shrink-0 shadow-md">
+                            <UserPlus className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                           </div>
                           <div className="flex-1">
                             <h4 className="font-semibold text-sm sm:text-base text-[#1A1A1A] font-[family-name:var(--font-crimson)] mb-1">
@@ -460,7 +454,7 @@ export function GuestList() {
                             });
                             setShowRequestModal(true);
                           }}
-                          className="w-full bg-[#1A1A1A] hover:bg-[#3C3C3C] text-[#E8DCC8] py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+                          className="w-full bg-[#D5BBAE] hover:bg-[#C5AB9E] text-white py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
                         >
                           <UserPlus className="h-3 w-3 sm:h-4 sm:w-4 mr-2 inline" />
                           Request to Join
@@ -480,13 +474,13 @@ export function GuestList() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-1.5 sm:p-3 md:p-4 bg-black/50 backdrop-blur-sm animate-in fade-in">
           <div className="relative w-full max-w-md sm:max-w-2xl mx-1.5 sm:mx-3 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl border border-[#1A1A1A]/30 overflow-hidden animate-in zoom-in-95 duration-300 max-h-[98vh] flex flex-col">
             {/* Modal Header with Gradient */}
-            <div className="relative bg-gradient-to-r from-[#1A1A1A] via-[#3C3C3C] to-[#1A1A1A] p-2.5 sm:p-4 md:p-6 lg:p-8 flex-shrink-0">
+            <div className="relative bg-gradient-to-r from-[#D5BBAE] via-[#E5CBBE] to-[#D5BBAE] p-3 sm:p-4 md:p-6 lg:p-8 flex-shrink-0">
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
               <div className="relative flex items-start justify-between gap-2">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2 md:mb-3">
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
-                      <Heart className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#E8DCC8]" />
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
+                      <Heart className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                     </div>
                     <h3 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-white truncate">
                       You're Invited!
@@ -529,7 +523,7 @@ export function GuestList() {
             </div>
 
             {/* Modal Content */}
-            <div className="p-2.5 sm:p-4 md:p-6 lg:p-8 overflow-y-auto flex-1 min-h-0">
+            <div className="p-3 sm:p-4 md:p-6 lg:p-8 overflow-y-auto flex-1 min-h-0">
               {hasResponded ? (
                 // Thank you message for guests who already responded
                 <div className="text-center py-3 sm:py-6 md:py-8">
@@ -586,7 +580,7 @@ export function GuestList() {
                   </div>
                   <Button
                     onClick={handleCloseModal}
-                    className="mt-3 sm:mt-4 md:mt-6 bg-[#1A1A1A] hover:bg-[#3C3C3C] text-[#E8DCC8] px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-xl text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold"
+                    className="mt-3 sm:mt-4 md:mt-6 bg-[#D5BBAE] hover:bg-[#C5AB9E] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-xl text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold"
                   >
                     Close
                   </Button>
@@ -598,7 +592,7 @@ export function GuestList() {
                     e.preventDefault();
                     handleSubmitRSVP();
                   }}
-                  className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6"
+                  className="space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-5"
                 >
                   {/* Can you attend? */}
                   <div>
@@ -737,7 +731,7 @@ export function GuestList() {
                     <Button
                       type="submit"
                       disabled={isLoading}
-                      className="w-full bg-[#1A1A1A] hover:bg-[#3C3C3C] text-[#E8DCC8] py-2.5 sm:py-3 md:py-3.5 lg:py-4 rounded-lg sm:rounded-xl text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold shadow-xl transition-all duration-300 hover:shadow-2xl disabled:opacity-70 min-h-[40px] sm:min-h-[44px] md:min-h-[48px]"
+                      className="w-full bg-[#D5BBAE] hover:bg-[#C5AB9E] text-white py-2.5 sm:py-3 md:py-3.5 lg:py-4 rounded-lg sm:rounded-xl text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold shadow-xl transition-all duration-300 hover:shadow-2xl disabled:opacity-70 min-h-[40px] sm:min-h-[44px] md:min-h-[48px]"
                     >
                       {isLoading ? (
                         <div className="flex items-center justify-center gap-2 sm:gap-3">
@@ -762,56 +756,56 @@ export function GuestList() {
 
             {/* Enhanced Success Overlay */}
             {success && (
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/98 via-[#3C3C3C]/98 to-[#1A1A1A]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D5BBAE]/98 via-[#E5CBBE]/98 to-[#D5BBAE]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-4">
                 <div className="text-center p-4 sm:p-6 md:p-8 max-w-sm mx-auto">
                   {/* Enhanced Icon Circle */}
                   <div className="relative inline-flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-6">
                     {/* Animated rings */}
-                    <div className="absolute inset-0 rounded-full border-2 sm:border-4 border-[#E8DCC8]/20 animate-ping" />
-                    <div className="absolute inset-0 rounded-full border-2 border-[#E8DCC8]/30" />
+                    <div className="absolute inset-0 rounded-full border-2 sm:border-4 border-white/20 animate-ping" />
+                    <div className="absolute inset-0 rounded-full border-2 border-white/30" />
                     {/* Icon container */}
-                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-[#E8DCC8] to-white rounded-full flex items-center justify-center shadow-xl">
+                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-white to-[#F5EBE0] rounded-full flex items-center justify-center shadow-xl">
                       <CheckCircle
-                        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-[#1A1A1A]"
+                        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-[#D5BBAE]"
                         strokeWidth={2.5}
                       />
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-bold text-[#E8DCC8] mb-2 sm:mb-3 md:mb-4">
+                  <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-bold text-white mb-2 sm:mb-3 md:mb-4">
                     RSVP Confirmed!
                   </h4>
 
                   {/* Message based on RSVP response */}
                   {formData.RSVP === "Yes" && (
                     <div className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4 md:mb-5">
-                      <p className="text-[#E8DCC8]/95 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg font-medium">
+                      <p className="text-white/95 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg font-medium">
                         We're thrilled you'll be joining us!
                       </p>
-                      <p className="text-[#E8DCC8]/80 font-[family-name:var(--font-crimson)] text-xs sm:text-sm md:text-base">
+                      <p className="text-white/80 font-[family-name:var(--font-crimson)] text-xs sm:text-sm md:text-base">
                         Your response has been recorded
                       </p>
                     </div>
                   )}
                   {formData.RSVP === "No" && (
-                    <p className="text-[#E8DCC8]/90 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-5">
+                    <p className="text-white/90 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-5">
                       We'll miss you, but thank you for letting us know.
                     </p>
                   )}
                   {!formData.RSVP && (
-                    <p className="text-[#E8DCC8]/90 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-5">
+                    <p className="text-white/90 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-5">
                       Thank you for your response!
                     </p>
                   )}
 
                   {/* Subtle closing indicator */}
                   <div className="flex items-center justify-center gap-1.5 sm:gap-2 mt-3 sm:mt-4 md:mt-5">
-                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E8DCC8]/60 rounded-full animate-pulse" />
-                    <p className="text-[#E8DCC8]/70 font-[family-name:var(--font-crimson)] text-[10px] sm:text-xs md:text-sm">
+                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full animate-pulse" />
+                    <p className="text-white/70 font-[family-name:var(--font-crimson)] text-[10px] sm:text-xs md:text-sm">
                       This will close automatically
                     </p>
-                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E8DCC8]/60 rounded-full animate-pulse" />
+                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full animate-pulse" />
                   </div>
                 </div>
               </div>
@@ -839,13 +833,13 @@ export function GuestList() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-1.5 sm:p-3 md:p-4 bg-black/50 backdrop-blur-sm animate-in fade-in">
           <div className="relative w-full max-w-md sm:max-w-2xl mx-1.5 sm:mx-3 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl border border-[#1A1A1A]/30 overflow-hidden animate-in zoom-in-95 duration-300 max-h-[98vh] flex flex-col">
             {/* Modal Header with Gradient */}
-            <div className="relative bg-gradient-to-r from-[#1A1A1A] via-[#3C3C3C] to-[#1A1A1A] p-2.5 sm:p-4 md:p-6 lg:p-8 flex-shrink-0">
+            <div className="relative bg-gradient-to-r from-[#D5BBAE] via-[#E5CBBE] to-[#D5BBAE] p-3 sm:p-4 md:p-6 lg:p-8 flex-shrink-0">
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
               <div className="relative flex items-start justify-between gap-2">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2 md:mb-3">
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
-                      <UserPlus className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#E8DCC8]" />
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
+                      <UserPlus className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                     </div>
                     <h3 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-white truncate">
                       Request to Join
@@ -875,7 +869,7 @@ export function GuestList() {
             </div>
 
             {/* Modal Content */}
-            <div className="p-2.5 sm:p-4 md:p-6 lg:p-8 overflow-y-auto flex-1 min-h-0">
+            <div className="p-3 sm:p-4 md:p-6 lg:p-8 overflow-y-auto flex-1 min-h-0">
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -1029,44 +1023,44 @@ export function GuestList() {
 
             {/* Enhanced Success Overlay */}
             {requestSuccess && (
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/98 via-[#3C3C3C]/98 to-[#1A1A1A]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D5BBAE]/98 via-[#E5CBBE]/98 to-[#D5BBAE]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-4">
                 <div className="text-center p-4 sm:p-6 md:p-8 max-w-sm mx-auto">
                   {/* Enhanced Icon Circle */}
                   <div className="relative inline-flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-6">
                     {/* Animated rings */}
-                    <div className="absolute inset-0 rounded-full border-2 sm:border-4 border-[#E8DCC8]/20 animate-ping" />
-                    <div className="absolute inset-0 rounded-full border-2 border-[#E8DCC8]/30" />
+                    <div className="absolute inset-0 rounded-full border-2 sm:border-4 border-white/20 animate-ping" />
+                    <div className="absolute inset-0 rounded-full border-2 border-white/30" />
                     {/* Icon container */}
-                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-[#E8DCC8] to-white rounded-full flex items-center justify-center shadow-xl">
+                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-white to-[#F5EBE0] rounded-full flex items-center justify-center shadow-xl">
                       <CheckCircle
-                        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-[#1A1A1A]"
+                        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-[#D5BBAE]"
                         strokeWidth={2.5}
                       />
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-bold text-[#E8DCC8] mb-2 sm:mb-3 md:mb-4">
+                  <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-bold text-white mb-2 sm:mb-3 md:mb-4">
                     Request Sent!
                   </h4>
 
                   {/* Message */}
                   <div className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4 md:mb-5">
-                    <p className="text-[#E8DCC8]/95 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg font-medium">
+                    <p className="text-white/95 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg font-medium">
                       We've received your request
                     </p>
-                    <p className="text-[#E8DCC8]/85 font-[family-name:var(--font-crimson)] text-xs sm:text-sm md:text-base">
+                    <p className="text-white/85 font-[family-name:var(--font-crimson)] text-xs sm:text-sm md:text-base">
                       We'll review it and get back to you soon
                     </p>
                   </div>
 
                   {/* Subtle closing indicator */}
                   <div className="flex items-center justify-center gap-1.5 sm:gap-2 mt-3 sm:mt-4 md:mt-5">
-                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E8DCC8]/60 rounded-full animate-pulse" />
-                    <p className="text-[#E8DCC8]/70 font-[family-name:var(--font-crimson)] text-[10px] sm:text-xs md:text-sm">
+                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full animate-pulse" />
+                    <p className="text-white/70 font-[family-name:var(--font-crimson)] text-[10px] sm:text-xs md:text-sm">
                       This will close automatically
                     </p>
-                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E8DCC8]/60 rounded-full animate-pulse" />
+                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/60 rounded-full animate-pulse" />
                   </div>
                 </div>
               </div>

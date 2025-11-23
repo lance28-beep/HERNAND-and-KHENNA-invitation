@@ -21,10 +21,10 @@ export function Countdown() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      // Target: January 11, 2026 at 4:00 PM GMT+8
+      // Target: March 21, 2026 at 3:00 PM GMT+8
       // Compute using UTC to avoid timezone parsing inconsistencies across browsers
-      // 4:00 PM GMT+8 == 08:00 AM UTC
-      const targetDate = Date.UTC(2026, 0, 11, 8, 0, 0) // January is month 0 (0-indexed)
+      // 3:00 PM GMT+8 == 07:00 AM UTC
+      const targetDate = Date.UTC(2026, 2, 21, 7, 0, 0) // March is month 2 (0-indexed)
       const now = new Date().getTime()
       const difference = targetDate - now
 
@@ -52,36 +52,36 @@ export function Countdown() {
   }, [])
 
   const CountdownUnit = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center gap-3 sm:gap-4">
-      {/* Simple, elegant card */}
+    <div className="flex flex-col items-center gap-2 sm:gap-3">
+      {/* Compact elegant card with gold accents */}
       <div className="relative group">
-        {/* Subtle glow on hover */}
-        <div className="absolute -inset-1 bg-gradient-to-br from-[#1A1A1A]/20 to-[#1A1A1A]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+        {/* Subtle gold glow on hover */}
+        <div className="absolute -inset-0.5 bg-gradient-to-br from-[#C9A55F]/20 to-[#D4AF7A]/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md" />
         
-        {/* Main card */}
-        <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl px-3 py-4 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 border-2 border-[#1A1A1A]/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#1A1A1A]/60 min-w-[65px] sm:min-w-[75px] md:min-w-[90px] lg:min-w-[100px]">
-          {/* Counter */}
+        {/* Main card - more compact for mobile */}
+        <div className="relative elegant-card rounded-lg sm:rounded-xl px-2.5 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-6 lg:py-6 border border-[#C9A55F]/30 premium-shadow hover:border-[#C9A55F]/50 transition-all duration-300 min-w-[60px] sm:min-w-[70px] md:min-w-[85px] lg:min-w-[95px]">
+          {/* Counter - smaller for mobile */}
           <div className="relative z-10 flex items-center justify-center">
             <Counter
               value={value}
               places={value >= 100 ? [100, 10, 1] : [10, 1]}
-              fontSize={36}
-              padding={6}
-              gap={3}
-              textColor="#1A1A1A"
+              fontSize={28}
+              padding={4}
+              gap={2}
+              textColor="#4A4442"
               fontWeight={700}
-              borderRadius={8}
-              horizontalPadding={4}
-              gradientHeight={10}
-              gradientFrom="rgba(26,26,26,0.08)"
+              borderRadius={6}
+              horizontalPadding={3}
+              gradientHeight={8}
+              gradientFrom="rgba(201,165,95,0.08)"
               gradientTo="transparent"
             />
           </div>
         </div>
       </div>
 
-      {/* Simple label */}
-      <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] uppercase tracking-wider drop-shadow-sm">
+      {/* Compact label */}
+      <span className="text-[10px] sm:text-xs font-[family-name:var(--font-crimson)] font-semibold text-[#4A4442] uppercase tracking-wide">
         {label}
       </span>
     </div>
@@ -90,101 +90,106 @@ export function Countdown() {
   return (
     <Section
       id="countdown"
-      className="relative py-16 sm:py-20 md:py-24 lg:py-28 bg-[#E8DCC8]/50"
+      className="relative py-16 sm:py-20 md:py-24 lg:py-28"
     >
       {/* Semi-transparent overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/40 backdrop-blur-sm pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-[#F0E5D3]/40 to-white/60 backdrop-blur-sm pointer-events-none" />
       
-      {/* Header */}
-      <div className="relative z-10 text-center mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#1A1A1A] mb-6 sm:mb-8 uppercase tracking-[0.12em] sm:tracking-[0.15em] drop-shadow-sm">
+      {/* Header - More compact for mobile */}
+      <div className="relative z-10 text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6">
+        <div className="flex items-center justify-center gap-2 mb-4">
+          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#C9A55F] to-transparent" />
+        </div>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#4A4442] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
           Countdown to Our Special Day
         </h2>
-        
-        <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#1A1A1A] font-light max-w-xl mx-auto leading-relaxed tracking-wide drop-shadow-sm px-4">
+        <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#C9A55F] to-transparent" />
+        </div>
+        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#4A4442]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
           Every moment brings us closer to forever
         </p>
       </div>
 
-      {/* Main countdown container */}
+      {/* Main countdown container - Compact for mobile */}
       <div className="relative z-10">
-        <div className="flex justify-center items-center gap-3 sm:gap-4 md:gap-5 lg:gap-7 mb-12 sm:mb-16 md:mb-20 flex-wrap px-4 sm:px-6">
+        <div className="flex justify-center items-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 mb-10 sm:mb-14 md:mb-18 px-3 sm:px-4">
           <CountdownUnit value={timeLeft.days} label="Days" />
           <CountdownUnit value={timeLeft.hours} label="Hours" />
           <CountdownUnit value={timeLeft.minutes} label="Minutes" />
           <CountdownUnit value={timeLeft.seconds} label="Seconds" />
         </div>
 
-        {/* Wedding date presentation - Save The Date Card Style */}
-        <div className="flex justify-center px-4 sm:px-6">
-          <div className="max-w-2xl w-full">
-            {/* Save The Date Header */}
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+        {/* Wedding date presentation - Compact Save The Date Card Style */}
+        <div className="flex justify-center px-3 sm:px-4 md:px-6">
+          <div className="max-w-xl w-full">
+            {/* Save The Date Header - More compact */}
+            <div className="text-center mb-6 sm:mb-8 md:mb-10">
               {/* Top decorative line */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
-                <div className="w-1.5 h-1.5 bg-[#1A1A1A]/60 rounded-full" />
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
+              <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#C9A55F] to-[#C9A55F]" />
+                <div className="w-1.5 h-1.5 bg-[#C9A55F] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#C9A55F] to-[#C9A55F]" />
               </div>
               
-              {/* Save The Date text */}
-              <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-bold text-[#1A1A1A] uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-4 sm:mb-5">
+              {/* Save The Date text - Better readability */}
+              <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-bold text-[#4A4442] uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-3 sm:mb-4">
                 Save The Date
               </p>
               
               {/* Bottom decorative line */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4">
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
-                <div className="w-1.5 h-1.5 bg-[#1A1A1A]/60 rounded-full" />
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
+              <div className="flex items-center justify-center gap-2 sm:gap-3">
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#C9A55F] to-[#C9A55F]" />
+                <div className="w-1.5 h-1.5 bg-[#C9A55F] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#C9A55F] to-[#C9A55F]" />
               </div>
             </div>
 
-            {/* Date Section - Elegant Layout */}
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              {/* Month - Script style like "and" in hero */}
-              <div className="mb-5 sm:mb-6 md:mb-8">
-                <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-ephesis)] text-[#1A1A1A] leading-none drop-shadow-sm">
-                  January
+            {/* Date Section - More compact and readable */}
+            <div className="text-center mb-6 sm:mb-8 md:mb-10">
+              {/* Month - Script style with gold color, smaller for mobile */}
+              <div className="mb-3 sm:mb-4 md:mb-5">
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-ephesis)] text-[#4A4442] leading-none">
+                  March
                 </p>
               </div>
               
-              {/* Day and Year - Horizontal layout with divider */}
-              <div className="flex items-center justify-center gap-4 sm:gap-5 md:gap-7 mb-8 sm:mb-10">
-                {/* Day - Large and bold focal point */}
-                <p className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-[family-name:var(--font-crimson)] font-normal text-[#1A1A1A] leading-none drop-shadow-md">
-                  11
+              {/* Day and Year - Horizontal layout with divider, more compact */}
+              <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 mb-5 sm:mb-6">
+                {/* Day - Large and bold but scaled for mobile */}
+                <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-normal text-[#4A4442] leading-none elegant-text-shadow">
+                  21
                 </p>
                 
-                {/* Vertical divider */}
-                <div className="h-16 sm:h-20 md:h-24 lg:h-28 w-0.5 bg-[#1A1A1A]/50" />
+                {/* Vertical divider with gold gradient - shorter */}
+                <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-[#C9A55F] via-[#D4AF7A] to-[#C9A55F]" />
                 
-                {/* Year - Elegant and refined */}
-                <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-crimson)] font-normal text-[#1A1A1A] leading-none drop-shadow-sm">
+                {/* Year - Elegant and refined, smaller for mobile */}
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#4A4442] leading-none">
                   2026
                 </p>
               </div>
             </div>
 
-            {/* Time Section */}
+            {/* Time Section - More compact */}
             <div className="text-center">
               {/* Top decorative line */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
-                <div className="w-1.5 h-1.5 bg-[#1A1A1A]/60 rounded-full" />
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
+              <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#C9A55F] to-[#C9A55F]" />
+                <div className="w-1.5 h-1.5 bg-[#C9A55F] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#C9A55F] to-[#C9A55F]" />
               </div>
               
-              {/* Time */}
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] tracking-wide mb-4 sm:mb-5 drop-shadow-sm">
-                4:00 PM
+              {/* Time - Better readability */}
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#4A4442] tracking-wide mb-3 sm:mb-4">
+                3:00 PM
               </p>
               
               {/* Bottom decorative line */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4">
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
-                <div className="w-1.5 h-1.5 bg-[#1A1A1A]/60 rounded-full" />
-                <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
+              <div className="flex items-center justify-center gap-2 sm:gap-3">
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#C9A55F] to-[#C9A55F]" />
+                <div className="w-1.5 h-1.5 bg-[#C9A55F] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#C9A55F] to-[#C9A55F]" />
               </div>
             </div>
           </div>

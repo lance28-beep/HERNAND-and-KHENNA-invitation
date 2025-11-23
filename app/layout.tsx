@@ -20,25 +20,25 @@ const ephesis = Ephesis({
 })
 
 export const metadata: Metadata = {
-  title: "Kenneth & Angel - Wedding Invitation",
+  title: "Steven & Renee - Wedding Invitation",
   description:
-    "You're invited to the wedding of Kenneth & Angel! Join us on January 11, 2026 in Camp Edgar Garden. RSVP, read our love story, view our gallery, and leave a message for the couple.",
+    "You're invited to the wedding of Steven & Renee! Join us on March 21, 2026 at Santa Clara Chapel and The Ruins, Talisay. RSVP, read our love story, view our gallery, and leave a message for the couple.",
   keywords:
-    "Kenneth & Angel wedding, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2026 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Camp Edgar Garden, #KennethAndAngelWedding",
+    "Steven & Renee wedding, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2026 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Santa Clara Chapel, The Ruins Talisay, #StevenAndReneeWedding",
   authors: [
-    { name: "Kenneth" },
-    { name: "Angel" },
+    { name: "Steven" },
+    { name: "Renee" },
   ],
-  creator: "Kenneth & Angel",
-  publisher: "Kenneth & Angel",
+  creator: "Steven & Renee",
+  publisher: "Steven & Renee",
   formatDetection: {
     email: false,
     address: false,
     telephone: true,
   },
-  metadataBase: new URL("https://Kenneth-and-Angel-invitation.vercel.app/"),
+  metadataBase: new URL("https://ReneeRose-and-StevenPaul-invitation.vercel.app/"),
   alternates: {
-    canonical: "https://Kenneth-and-Angel-invitation.vercel.app/",
+    canonical: "https://ReneeRose-and-StevenPaul-invitation.vercel.app/",
   },
   icons: {
     icon: [
@@ -60,29 +60,29 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "Kenneth & Angel Wedding | January 11, 2026",
+    title: "Steven & Renee Wedding | March 21, 2026",
     description:
-      "Celebrate the union of Kenneth & Angel on January 11, 2026 in Camp Edgar Garden. Discover our love story, RSVP, view the gallery, and leave your wishes!",
-    url: "https://Kenneth-and-Angel-invitation.vercel.app/",
-    siteName: "Kenneth and Angel Wedding ",
+      "Celebrate the union of Steven & Renee on March 21, 2026 at Santa Clara Chapel and The Ruins, Talisay. Discover our love story, RSVP, view the gallery, and leave your wishes!",
+    url: "https://ReneeRose-and-StevenPaul-invitation.vercel.app/",
+    siteName: "Steven and Renee Wedding",
     locale: "en_PH",
     type: "website",
     images: [
       {
-        url: "https://Kenneth-and-Angel-invitation.vercel.app/Details/image.png",
+        url: "https://ReneeRose-and-StevenPaul-invitation.vercel.app/LoveStory/image.png",
         width: 1200,
         height: 630,
-        alt: "Kenneth & Angel Wedding Invitation - January 11, 2026",
+        alt: "Steven & Renee Wedding Invitation - March 21, 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kenneth & Angel Wedding Invitation",
+    title: "Steven & Renee Wedding Invitation",
     description:
-      "You're invited to the wedding of Kenneth & Angel! January 11, 2026. RSVP, view our gallery, and leave a message! #KennethAndAngelWedding",
-    images: ["https://Kenneth-and-Angel-invitation.vercel.app/Details/image.png"],
-    creator: "@kennethandangel",
+      "You're invited to the wedding of Steven & Renee! March 21, 2026. RSVP, view our gallery, and leave a message! #StevenAndReneeWedding",
+    images: ["https://ReneeRose-and-StevenPaul-invitation.vercel.app/LoveStory/image.png"],
+    creator: "@stevenandrenee",
   },
   robots: {
     index: true,
@@ -102,40 +102,52 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Event",
-      name: "Kenneth & Angel Wedding",
-      startDate: "2026-01-11T14:00:00+08:00",
-      endDate: "2026-01-11T22:00:00+08:00",
+      name: "Steven & Renee Wedding",
+      startDate: "2026-03-21T15:00:00+08:00",
+      endDate: "2026-03-21T23:00:00+08:00",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: [
         {
           "@type": "Place",
-          name: "Camp Edgar Garden",
+          name: "Santa Clara Chapel",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Nature's Village Resort, Talisay City, Negros Occidental 6115, Philippines",
-            addressLocality: "Talisay City",
+            streetAddress: "Santo Domingo Ave, Santa Clara Subdivision",
+            addressLocality: "Bacolod City",
             addressRegion: "Negros Occidental",
-            postalCode: "6115",
+            postalCode: "6100",
+            addressCountry: "PH",
+          },
+        },
+        {
+          "@type": "Place",
+          name: "The Ruins, Talisay",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Don Mariano L. Lacson Highway, Brgy. Zone 15",
+            addressLocality: "Talisay",
+            addressRegion: "Negros Occidental",
+            postalCode: "6100",
             addressCountry: "PH",
           },
         },
       ],
-      image: ["https://Kenneth-and-Angel-invitation.vercel.app/Details/image.png"],
+      image: ["https://ReneeRose-and-StevenPaul-invitation.vercel.app/LoveStory/image.png"],
       description:
-        "You're invited to the wedding of Kenneth & Angel! Join us on January 11, 2026 in Camp Edgar Garden. RSVP, read our love story, view our gallery, and leave a message for the couple.",
+        "You're invited to the wedding of Steven & Renee! Join us on March 21, 2026 at Santa Clara Chapel and The Ruins, Talisay. RSVP, read our love story, view our gallery, and leave a message for the couple.",
       organizer: {
         "@type": "Person",
-        name: "Kenneth & Angel",
+        name: "Steven & Renee",
       },
       offers: {
         "@type": "Offer",
-        url: "https://Kenneth-and-Angel-invitation.vercel.app/",
+        url: "https://ReneeRose-and-StevenPaul-invitation.vercel.app/",
         availability: "https://schema.org/InStock",
         price: "0",
         priceCurrency: "PHP",
       },
-        eventHashtag: "#KENNETHelpFallingForANGEL #AngelforKen2026",
+        eventHashtag: "#StevenAndReneeForever #StevenAndRenee2026",
     }),
   },
 }
@@ -148,7 +160,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="theme-color" content="#0A3428" />
+        <meta name="theme-color" content="#D4AF37" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" as="image" href="/mobile-background/DSCF2614-min.jpg" media="(max-width: 767px)" />

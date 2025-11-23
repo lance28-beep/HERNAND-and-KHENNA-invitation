@@ -25,16 +25,16 @@ export function Details() {
   }
 
   // Updated venue information
-  const ceremonyVenueName = "Camp Edgar Garden"
-  const ceremonyVenueDetail = "Nature's Village Resort"
-  const ceremonyAddress = "Talisay City, Negros Occidental 6115, Philippines"
-  const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyVenueDetail}, ${ceremonyAddress}`
+  const ceremonyVenueName = "Santa Clara Chapel"
+  const ceremonyVenueDetail = "(Barangay Sang Birhen Parish Church)"
+  const ceremonyAddress = "Santo Domingo Ave, Santa Clara Subdivision, Bacolod City, Negros Occidental"
+  const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyAddress}`
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(ceremonyVenue)}`
 
-  const receptionVenueName = "Padre Pio BC"
-  const receptionVenueDetail = "Nature's Village Resort"
-  const receptionAddress = "Talisay City, Negros Occidental 6115, Philippines"
-  const receptionVenue = `${receptionVenueName}, ${receptionVenueDetail}, ${receptionAddress}`
+  const receptionVenueName = "The Ruins"
+  const receptionVenueDetail = "Talisay"
+  const receptionAddress = "Don Mariano L. Lacson Highway, Brgy. Zone 15, Talisay, Negros Occidental 6100"
+  const receptionVenue = `${receptionVenueName}, ${receptionAddress}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(receptionVenue)}`
 
   const openInMaps = (link: string) => {
@@ -43,17 +43,22 @@ export function Details() {
 
 
   return (
-    <Section id="details" className="relative py-16 sm:py-20 md:py-24 lg:py-28 bg-[#E8DCC8]/50">
+    <Section id="details" className="relative py-16 sm:py-20 md:py-24 lg:py-28">
       {/* Semi-transparent overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/40 backdrop-blur-sm pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-[#E8D5D0]/40 to-white/60 backdrop-blur-sm pointer-events-none" />
 
       {/* Header */}
       <div className="relative z-10 text-center mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#1A1A1A] mb-6 sm:mb-8 uppercase tracking-[0.12em] sm:tracking-[0.15em] drop-shadow-sm">
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#C9A55F] to-transparent" />
+        </div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#4A4442] mb-6 sm:mb-8 uppercase tracking-[0.12em] sm:tracking-[0.15em] elegant-text-shadow">
           Event Details
         </h2>
-        
-        <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#1A1A1A] font-light max-w-xl mx-auto leading-relaxed tracking-wide drop-shadow-sm px-4">
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#C9A55F] to-transparent" />
+        </div>
+        <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#4A4442]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
           Everything you need to know about our special day
         </p>
       </div>
@@ -63,16 +68,16 @@ export function Details() {
         
         {/* Ceremony Card */}
         <div className="relative group">
-          {/* Subtle glow on hover */}
-          <div className="absolute -inset-1 bg-gradient-to-br from-[#1A1A1A]/20 to-[#1A1A1A]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+          {/* Subtle gold glow on hover */}
+          <div className="absolute -inset-1 bg-gradient-to-br from-[#C9A55F]/20 to-[#D4AF7A]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
           
           {/* Main card */}
-          <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border-2 border-[#1A1A1A]/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#1A1A1A]/60">
+          <div className="relative elegant-card rounded-xl sm:rounded-2xl overflow-hidden border border-[#C9A55F]/30 premium-shadow hover:border-[#C9A55F]/50 transition-all duration-300">
             {/* Venue Image */}
             <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96 overflow-hidden">
               <Image
-                src="/Details/Camp_Edgar-1_optimized_250.jpg"
-                alt="Camp Edgar Garden"
+                src="/Details/SantaClaraChapel.png"
+                alt="Santa Clara Chapel"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
@@ -80,16 +85,16 @@ export function Details() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               
-              {/* Venue name overlay */}
+              {/* Venue name overlay with gold accent */}
               <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 right-4 sm:right-6 md:right-8">
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-ephesis)] text-white/90 mb-2 sm:mb-3 drop-shadow-lg">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-ephesis)] text-[#D4AF7A] mb-2 sm:mb-3 drop-shadow-lg">
                   Ceremony
                 </p>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-white mb-1 sm:mb-2 drop-shadow-lg uppercase tracking-[0.1em]">
-                  Camp Edgar Garden
+                  Santa Clara Chapel
                 </h3>
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-white/95 drop-shadow-md tracking-wide">
-                  Nature's Village Resort
+                  Barangay Sang Birhen Parish Church
                 </p>
               </div>
             </div>
@@ -99,56 +104,56 @@ export function Details() {
               {/* Date Section */}
               <div className="text-center mb-8 sm:mb-10 md:mb-12">
                 {/* Day name */}
-                <p className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] uppercase tracking-[0.2em] mb-3 sm:mb-4">
-                  Sunday
+                <p className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#C9A55F] uppercase tracking-[0.2em] mb-3 sm:mb-4">
+                  Saturday
                 </p>
                 
-                {/* Month - Script style */}
+                {/* Month - Script style with gold */}
                 <div className="mb-4 sm:mb-5">
-                  <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-ephesis)] text-[#1A1A1A] leading-none">
-                    January
+                  <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-ephesis)] text-[#C9A55F] leading-none">
+                    March
                   </p>
                 </div>
                 
                 {/* Day and Year */}
                 <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 mb-6 sm:mb-7 md:mb-8">
-                  <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-normal text-[#1A1A1A] leading-none">
-                    11
+                  <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-normal text-[#4A4442] leading-none elegant-text-shadow">
+                    21
                   </p>
-                  <div className="h-12 sm:h-16 md:h-20 lg:h-24 w-0.5 bg-[#1A1A1A]/50" />
-                  <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-light text-[#1A1A1A] leading-none">
+                  <div className="h-12 sm:h-16 md:h-20 lg:h-24 w-[2px] bg-gradient-to-b from-[#C9A55F] via-[#D4AF7A] to-[#C9A55F]" />
+                  <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-light text-[#4A4442] leading-none">
                     2026
                   </p>
                 </div>
 
                 {/* Decorative line */}
                 <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-                  <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
-                  <div className="w-1.5 h-1.5 bg-[#1A1A1A]/60 rounded-full" />
-                  <div className="h-px w-10 sm:w-14 md:w-20 bg-[#1A1A1A]/50" />
+                  <div className="h-[1px] w-10 sm:w-14 md:w-20 bg-gradient-to-r from-transparent via-[#C9A55F] to-[#C9A55F]" />
+                  <div className="w-2 h-2 bg-[#C9A55F] rounded-full" />
+                  <div className="h-[1px] w-10 sm:w-14 md:w-20 bg-gradient-to-l from-transparent via-[#C9A55F] to-[#C9A55F]" />
                 </div>
 
                 {/* Time */}
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] tracking-wide">
-                  4:00 PM
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#C9A55F] tracking-wide">
+                  3:00 PM
                 </p>
               </div>
 
               {/* Location Details */}
-              <div className="bg-[#E8DCC8]/20 rounded-xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 border border-[#1A1A1A]/15">
+              <div className="bg-gradient-to-br from-[#F0E5D3]/40 to-white rounded-xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 border border-[#C9A55F]/20">
                 <div className="flex items-start gap-3 sm:gap-4">
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#1A1A1A] mt-0.5 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#C9A55F] mt-0.5 flex-shrink-0" />
                   <div className="flex-1">
-                    <p className="text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-2 uppercase tracking-wide">
+                    <p className="text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#C9A55F] mb-2 uppercase tracking-wide">
                       Location
                     </p>
-                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#4A4442] leading-relaxed">
                       {ceremonyVenueName}
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed mt-1">
+                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#4A4442]/70 leading-relaxed mt-1">
                       {ceremonyVenueDetail}
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#4A4442]/70 leading-relaxed">
                       {ceremonyAddress}
                     </p>
                   </div>
@@ -159,7 +164,7 @@ export function Details() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button
                   onClick={() => openInMaps(ceremonyMapsLink)}
-                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-[#1A1A1A] hover:bg-[#3C3C3C] text-[#E8DCC8] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg"
+                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-gradient-to-r from-[#C9A55F] to-[#D4AF7A] hover:from-[#B8944E] hover:to-[#C9A55F] text-white rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] premium-shadow"
                   aria-label="Get directions to ceremony venue"
                 >
                   <Navigation className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
@@ -167,11 +172,11 @@ export function Details() {
                 </button>
                 <button
                   onClick={() => copyToClipboard(ceremonyVenue, 'ceremony')}
-                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-white border-2 border-[#1A1A1A]/30 hover:border-[#1A1A1A]/50 hover:bg-[#E8DCC8]/20 text-[#1A1A1A] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-white border-2 border-[#C9A55F]/30 hover:border-[#C9A55F]/50 hover:bg-[#F0E5D3]/20 text-[#4A4442] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
                   aria-label="Copy ceremony venue address"
                 >
                   {copiedItems.has('ceremony') ? (
-                    <Check className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                    <Check className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#C9A55F]" />
                   ) : (
                     <Copy className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                   )}
@@ -184,53 +189,63 @@ export function Details() {
 
         {/* Reception Card */}
         <div className="relative group">
-          {/* Subtle glow on hover */}
-          <div className="absolute -inset-1 bg-gradient-to-br from-[#1A1A1A]/20 to-[#1A1A1A]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+          {/* Subtle gold glow on hover */}
+          <div className="absolute -inset-1 bg-gradient-to-br from-[#C9A55F]/20 to-[#D4AF7A]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
           
           {/* Main card */}
-          <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl overflow-hidden border-2 border-[#1A1A1A]/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#1A1A1A]/60">
+          <div className="relative elegant-card rounded-xl sm:rounded-2xl overflow-hidden border border-[#C9A55F]/30 premium-shadow hover:border-[#C9A55F]/50 transition-all duration-300">
             {/* Venue Image */}
             <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96 overflow-hidden">
               <Image
-                src="/Details/3-3.jpg"
-                alt="Padre Pio BC"
+                src="/Details/TheRuins.png"
+                alt="The Ruins, Talisay"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               
-              {/* Venue name overlay */}
+              {/* Venue name overlay with gold accent */}
               <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 right-4 sm:right-6 md:right-8">
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-ephesis)] text-white/90 mb-2 sm:mb-3 drop-shadow-lg">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-ephesis)] text-[#D4AF7A] mb-2 sm:mb-3 drop-shadow-lg">
                   Reception
                 </p>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-white mb-1 sm:mb-2 drop-shadow-lg uppercase tracking-[0.1em]">
-                  Padre Pio BC
+                  The Ruins
                 </h3>
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-white/95 drop-shadow-md tracking-wide">
-                  Nature's Village Resort
+                  Talisay, Negros Occidental
                 </p>
               </div>
             </div>
 
             {/* Event Details Content */}
             <div className="p-5 sm:p-7 md:p-9 lg:p-11">
+              {/* Time */}
+              <div className="text-center mb-8 sm:mb-10">
+                <p className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#C9A55F] uppercase tracking-[0.2em] mb-3 sm:mb-4">
+                  Starts at
+                </p>
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#C9A55F] tracking-wide">
+                  4:30 PM
+                </p>
+              </div>
+
               {/* Location Details */}
-              <div className="bg-[#E8DCC8]/20 rounded-xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 border border-[#1A1A1A]/15">
+              <div className="bg-gradient-to-br from-[#F0E5D3]/40 to-white rounded-xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 border border-[#C9A55F]/20">
                 <div className="flex items-start gap-3 sm:gap-4">
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#1A1A1A] mt-0.5 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#C9A55F] mt-0.5 flex-shrink-0" />
                   <div className="flex-1">
-                    <p className="text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-2 uppercase tracking-wide">
+                    <p className="text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#C9A55F] mb-2 uppercase tracking-wide">
                       Location
                     </p>
-                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#4A4442] leading-relaxed">
                       {receptionVenueName}
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed mt-1">
+                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#4A4442]/70 leading-relaxed mt-1">
                       {receptionVenueDetail}
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#4A4442]/70 leading-relaxed">
                       {receptionAddress}
                     </p>
                   </div>
@@ -241,7 +256,7 @@ export function Details() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button
                   onClick={() => openInMaps(receptionMapsLink)}
-                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-[#1A1A1A] hover:bg-[#3C3C3C] text-[#E8DCC8] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg"
+                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-gradient-to-r from-[#C9A55F] to-[#D4AF7A] hover:from-[#B8944E] hover:to-[#C9A55F] text-white rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] premium-shadow"
                   aria-label="Get directions to reception venue"
                 >
                   <Navigation className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
@@ -249,11 +264,11 @@ export function Details() {
                 </button>
                 <button
                   onClick={() => copyToClipboard(receptionVenue, 'reception')}
-                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-white border-2 border-[#1A1A1A]/30 hover:border-[#1A1A1A]/50 hover:bg-[#E8DCC8]/20 text-[#1A1A1A] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                  className="flex-1 flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 bg-white border-2 border-[#C9A55F]/30 hover:border-[#C9A55F]/50 hover:bg-[#F0E5D3]/20 text-[#4A4442] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
                   aria-label="Copy reception venue address"
                 >
                   {copiedItems.has('reception') ? (
-                    <Check className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                    <Check className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#C9A55F]" />
                   ) : (
                     <Copy className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                   )}
@@ -284,50 +299,20 @@ export function Details() {
 
         {/* Attire Cards */}
         <div className="space-y-5 sm:space-y-6 md:space-y-8">
-          {/* Principal Sponsors */}
+          {/* Unified Dress Code */}
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-br from-[#1A1A1A]/15 to-[#1A1A1A]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
             
             <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#1A1A1A]/30 shadow-lg hover:shadow-xl transition-all duration-300">
               <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-6 sm:mb-7 md:mb-8 uppercase tracking-[0.12em] text-center">
-                Principal Sponsors
+                Dress Code
               </h4>
               
-              {/* Attire Requirements */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8 mb-7 sm:mb-8 md:mb-10">
-                {/* Men */}
-                <div className="relative bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20 hover:border-[#1A1A1A]/40 transition-all duration-300 hover:shadow-md group/card">
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#1A1A1A] rounded-full mb-4 sm:mb-5 group-hover/card:scale-105 transition-transform duration-300">
-                      <span className="text-[#E8DCC8] text-xl sm:text-2xl font-[family-name:var(--font-crimson)] font-semibold">M</span>
-                    </div>
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-3 sm:mb-4 uppercase tracking-wide">
-                      Men
-                    </p>
-                    <ul className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed space-y-1 text-left">
-                      <li>• Black suit</li>
-                      <li>• White dress shirt</li>
-                      <li>• Tie</li>
-                      <li>• Black dress pants</li>
-                      <li>• Black dress shoes</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Women */}
-                <div className="relative bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20 hover:border-[#1A1A1A]/40 transition-all duration-300 hover:shadow-md group/card">
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#1A1A1A] rounded-full mb-4 sm:mb-5 group-hover/card:scale-105 transition-transform duration-300">
-                      <span className="text-[#E8DCC8] text-xl sm:text-2xl font-[family-name:var(--font-crimson)] font-semibold">W</span>
-                    </div>
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-3 sm:mb-4 uppercase tracking-wide">
-                      Women
-                    </p>
-                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed">
-                      Pastel-colored gowns
-                    </p>
-                  </div>
-                </div>
+              {/* Unified Dress Code Text */}
+              <div className="text-center mb-7 sm:mb-8 md:mb-10">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
+                  Barong Tagalog or Any Formal Attire and Long Gown in shades of Champagne Gold or Neutral Colors
+                </p>
               </div>
 
               {/* Decorative divider */}
@@ -340,124 +325,32 @@ export function Details() {
               {/* Color Palette - Single instance at bottom */}
               <div className="text-center bg-gradient-to-br from-[#1A1A1A]/5 via-transparent to-[#1A1A1A]/5 rounded-xl p-5 sm:p-6 md:p-7">
                 <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] uppercase tracking-wider mb-4 sm:mb-5">
-                  Color Palette for Women
+                  Color Palette - Champagne Gold & Neutral Tones
                 </p>
                 <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
                   <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#FFB3BA] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Pink</span>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#D4AF37] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
+                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Champagne Gold</span>
                   </div>
                   <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#BAE1FF] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Blue</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#FFFFBA] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Yellow</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#BAFFC9] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Green</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#E0BBE4] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Lavender</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Guests */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-br from-[#1A1A1A]/15 to-[#1A1A1A]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
-            
-            <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#1A1A1A]/30 shadow-lg hover:shadow-xl transition-all duration-300">
-              <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-6 sm:mb-7 md:mb-8 uppercase tracking-[0.12em] text-center">
-                Guests
-              </h4>
-              
-              {/* Attire Requirements */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8 mb-7 sm:mb-8 md:mb-10">
-                {/* Men */}
-                <div className="relative bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20 hover:border-[#1A1A1A]/40 transition-all duration-300 hover:shadow-md group/card">
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#1A1A1A] rounded-full mb-4 sm:mb-5 group-hover/card:scale-105 transition-transform duration-300">
-                      <span className="text-[#E8DCC8] text-xl sm:text-2xl font-[family-name:var(--font-crimson)] font-semibold">M</span>
-                    </div>
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-3 sm:mb-4 uppercase tracking-wide">
-                      Men
-                    </p>
-                    <ul className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed space-y-1 text-left">
-                      <li>• Long-sleeved formal shirt</li>
-                      <li className="text-xs sm:text-sm md:text-base">(with or without a jacket)</li>
-                      <li>• Muted tones: light grey, beige, taupe, champagne, or soft brown</li>
-                      <li>• Dress pants</li>
-                      <li>• Dress shoes</li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Women */}
-                <div className="relative bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20 hover:border-[#1A1A1A]/40 transition-all duration-300 hover:shadow-md group/card">
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#1A1A1A] rounded-full mb-4 sm:mb-5 group-hover/card:scale-105 transition-transform duration-300">
-                      <span className="text-[#E8DCC8] text-xl sm:text-2xl font-[family-name:var(--font-crimson)] font-semibold">W</span>
-                    </div>
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] mb-3 sm:mb-4 uppercase tracking-wide">
-                      Women
-                    </p>
-                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A]/70 leading-relaxed">
-                      Formal wear in pastel shades
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Decorative divider */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-7">
-                <div className="h-px w-12 sm:w-16 md:w-20 bg-[#1A1A1A]/40" />
-                <div className="w-1.5 h-1.5 bg-[#1A1A1A]/50 rounded-full" />
-                <div className="h-px w-12 sm:w-16 md:w-20 bg-[#1A1A1A]/40" />
-              </div>
-              
-              {/* Color Palette - Single instance at bottom */}
-              <div className="text-center bg-gradient-to-br from-[#1A1A1A]/5 via-transparent to-[#1A1A1A]/5 rounded-xl p-5 sm:p-6 md:p-7">
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#1A1A1A] uppercase tracking-wider mb-4 sm:mb-5">
-                  Suggested Color Palette
-                </p>
-                <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#FFB3BA] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Pink</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#BAE1FF] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Blue</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#BAFFC9] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Green</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#E0BBE4] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Pastel Lavender</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#D3D3D3] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Light Grey</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#E8DCC8] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#F5F5DC] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
                     <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Beige</span>
                   </div>
                   <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#8B7355] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Taupe</span>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#C9B037] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
+                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Gold</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#E8DCC4] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
+                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Cream</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#D2B48C] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
+                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Tan</span>
                   </div>
                   <div className="flex flex-col items-center gap-2 sm:gap-2.5">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#F5E6D3] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#1A1A1A]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Champagne</span>
+                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#1A1A1A]/70">Ivory</span>
                   </div>
                 </div>
               </div>
@@ -476,38 +369,38 @@ export function Details() {
             
             {/* Reminders List */}
             <div className="space-y-5 sm:space-y-6 md:space-y-7">
-              {/* Perfume Allergy */}
+              {/* Attendance Limited */}
               <div className="bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
-                  <span className="font-semibold">Scent-Free Request:</span> The bride has a sensitivity to fragrances. We kindly ask all guests to refrain from wearing perfume, cologne, or any scented products.
+                  <span className="font-semibold">Invitation Only:</span> As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation.
                 </p>
               </div>
 
-              {/* No Plus Ones */}
+              {/* No Boxed Gifts */}
               <div className="bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
-                  <span className="font-semibold">Invitation Only:</span> Due to limited space, we are unable to accommodate additional guests beyond those named on your invitation.
+                  <span className="font-semibold">Gift Policy:</span> We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.
                 </p>
               </div>
 
               {/* Adults Only */}
               <div className="bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
-                  <span className="font-semibold">Adult-Only Celebration:</span> This is an adults-only event. We appreciate your understanding that children are not included, with the exception of those specifically invited from our immediate family.
+                  <span className="font-semibold">Adults-Only Event:</span> We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)
                 </p>
               </div>
 
-              {/* No Gifts */}
+              {/* No Photos */}
               <div className="bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
-                  <span className="font-semibold">Gift Policy:</span> Your presence is the greatest gift! However, if you wish to honor us with a gift, we would gratefully accept monetary contributions as we prepare for our new journey together and our migration to Canada.
+                  <span className="font-semibold">Photo Policy:</span> We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories.
                 </p>
               </div>
 
-              {/* Dress Code Reminder */}
+              {/* RSVP Contact */}
               <div className="bg-gradient-to-br from-[#E8DCC8]/30 via-[#E8DCC8]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#1A1A1A]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#1A1A1A] leading-relaxed">
-                  <span className="font-semibold">Dress Code Compliance:</span> We kindly request that all guests adhere to the dress code specified on their invitation to maintain the elegance of our celebration.
+                  <span className="font-semibold">RSVP Contact:</span> Please reach out to Renee & Steven at +639271655509 | +639665949009
                 </p>
               </div>
             </div>

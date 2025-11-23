@@ -87,37 +87,35 @@ function MessageForm({ onSuccess, onMessageSent }: MessageFormProps) {
       <div className="absolute -top-3 -left-3 w-6 h-6 bg-[#3C3C3C]/10 rounded-full blur-sm sm:w-8 sm:h-8 sm:-top-4 sm:-left-4"></div>
       <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-[#3C3C3C]/8 rounded-full blur-md sm:w-10 sm:h-10 sm:-bottom-4 sm:-right-4"></div>
       
-      <Card className={`relative w-full border-2 border-[#3C3C3C]/25 shadow-lg bg-white/90 backdrop-blur-sm transition-all duration-300 overflow-hidden rounded-xl ${
-        isFocused ? 'border-[#3C3C3C]/40 bg-white/95' : 'hover:border-[#3C3C3C]/35'
+      <Card className={`relative w-full border-2 border-[#3C3C3C]/25 shadow-lg transition-all duration-300 overflow-hidden rounded-xl ${
+        isFocused ? 'border-[#3C3C3C]/40' : 'hover:border-[#3C3C3C]/35'
       } ${isSubmitted ? 'animate-bounce' : ''}`}>
-        {/* Simple elegant overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#E8DCC8]/5 to-transparent"></div>
         
         {/* Success animation overlay */}
         {isSubmitted && (
           <div className="absolute inset-0 bg-gradient-to-br from-green-400/20 to-green-300/10 flex items-center justify-center z-20 pointer-events-none">
             <div className="flex flex-col items-center gap-2 animate-pulse">
               <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
-                <Sparkles className="h-8 w-8 text-white" />
+                <Sparkles className="h-8 w-8 text-white" fill="#C9A55F" />
               </div>
               <p className="text-green-600 font-semibold text-lg">Sent!</p>
             </div>
           </div>
         )}
         
-        <CardContent className="relative p-5 sm:p-8 md:p-10">
+        <CardContent className="relative p-4 sm:p-6 md:p-8">
           {/* Header with icon */}
-          <div className="text-center mb-5 sm:mb-8">
-            <div className="relative inline-block mb-3 sm:mb-4">
+          <div className="text-center mb-4 sm:mb-6">
+            <div className="relative inline-block mb-2 sm:mb-3">
               <div className="absolute inset-0 bg-[#3C3C3C]/20 rounded-full blur-lg scale-150"></div>
-              <div className="relative w-10 h-10 sm:w-14 sm:h-14 bg-[#3C3C3C] rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <MessageCircle className="h-5 w-5 sm:h-7 sm:w-7 text-[#E8DCC8]" />
+              <div className="relative w-9 h-9 sm:w-12 sm:h-12 bg-[#C9A55F] rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <MessageCircle className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
               </div>
             </div>
-            <h3 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-normal text-[#3C3C3C] mb-2 sm:mb-3 uppercase tracking-[0.12em]">
+            <h3 className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-normal text-[#3C3C3C] mb-1.5 sm:mb-2 uppercase tracking-[0.12em]">
               Share Your Love
             </h3>
-            <p className="text-sm sm:text-base text-[#3C3C3C]/80 font-[family-name:var(--font-crimson)] font-light tracking-wide leading-relaxed px-1">
+            <p className="text-xs sm:text-sm text-[#3C3C3C]/80 font-[family-name:var(--font-crimson)] font-light tracking-wide leading-relaxed px-1">
               Your message will be treasured forever
             </p>
           </div>
@@ -125,7 +123,7 @@ function MessageForm({ onSuccess, onMessageSent }: MessageFormProps) {
           <form 
             ref={formRef} 
             onSubmit={handleSubmit} 
-            className="space-y-4 sm:space-y-6"
+            className="space-y-3 sm:space-y-4 md:space-y-5"
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
           >
@@ -254,36 +252,23 @@ export function Messages() {
   }, [fetchMessages])
 
   return (
-    <Section id="messages" className="bg-[#E8DCC8]/80 py-16 sm:py-20 md:py-24 lg:py-28">
+    <Section id="messages" className="py-10 sm:py-16 md:py-20 lg:py-24">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Decorative background elements */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-          {/* Floating soft glows */}
-          <div className="hidden sm:block absolute -top-6 -left-6 w-24 h-24 bg-[#3C3C3C]/5 rounded-full blur-2xl animate-pulse" />
-          <div className="hidden sm:block absolute top-10 right-0 w-20 h-20 bg-[#3C3C3C]/8 rounded-full blur-xl animate-pulse delay-1000" />
-          <div className="hidden sm:block absolute bottom-10 left-10 w-28 h-28 bg-[#3C3C3C]/5 rounded-full blur-2xl animate-pulse delay-2000" />
-          <div className="sm:hidden absolute top-4 left-0 w-14 h-14 bg-[#3C3C3C]/5 rounded-full blur-lg" />
-          <div className="sm:hidden absolute bottom-6 right-2 w-10 h-10 bg-[#3C3C3C]/8 rounded-full blur-md" />
-
-          {/* Gradient lines */}
-          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#3C3C3C]/20 to-transparent" />
-          <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#3C3C3C]/15 to-transparent" />
-        </div>
         {/* Header Section */}
-         <div className="text-center mb-12 sm:mb-16 md:mb-20">
-           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#3C3C3C] mb-8 sm:mb-10 text-balance uppercase tracking-[0.12em] sm:tracking-[0.15em]">
+         <div className="text-center mb-8 sm:mb-12 md:mb-16">
+           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-white mb-4 sm:mb-6 md:mb-8 text-balance uppercase tracking-[0.12em] sm:tracking-[0.15em]">
              Love Messages
            </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="relative inline-block mb-5 sm:mb-7">
+            <div className="relative inline-block mb-3 sm:mb-5">
               <div className="absolute inset-0 bg-[#3C3C3C]/10 rounded-full blur-xl scale-150 animate-pulse"></div>
             </div>
             
-            <h3 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-ephesis)] text-[#3C3C3C] mb-4 sm:mb-5">
+            <h3 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-ephesis)] text-white mb-2 sm:mb-3 md:mb-4">
               Share Your Heartfelt Wishes
             </h3>
-            <p className="text-base sm:text-lg md:text-xl text-[#3C3C3C]/80 font-[family-name:var(--font-crimson)] font-light leading-relaxed max-w-2xl mx-auto px-4 sm:px-6 tracking-wide">
+            <p className="text-sm sm:text-base md:text-lg text-white font-[family-name:var(--font-crimson)] font-light leading-relaxed max-w-2xl mx-auto px-2 sm:px-4 tracking-wide">
               Your messages of love and joy will be treasured forever. 
               Share your memories, well wishes, and congratulations for the happy couple.
             </p>
@@ -291,7 +276,7 @@ export function Messages() {
         </div>
 
         {/* Form Section */}
-        <div className="flex justify-center mb-16 sm:mb-20 md:mb-24">
+        <div className="flex justify-center mb-10 sm:mb-14 md:mb-20">
           <div className="relative max-w-2xl w-full">
             {/* Card halo */}
             <div className="absolute -inset-3 bg-gradient-to-br from-[#3C3C3C]/15 via-[#3C3C3C]/10 to-transparent rounded-3xl blur-2xl opacity-70" />
@@ -305,17 +290,17 @@ export function Messages() {
           {/* Top corner accents */}
           <div className="absolute -top-3 -left-3 w-4 h-4 bg-[#3C3C3C]/40 rounded-full blur-sm opacity-70" />
           <div className="absolute -top-3 -right-3 w-4 h-4 bg-[#3C3C3C]/40 rounded-full blur-sm opacity-70" />
-          <div className="text-center mb-10 sm:mb-14 md:mb-16">
-            <div className="relative inline-block mb-5 sm:mb-7">
+          <div className="text-center mb-6 sm:mb-10 md:mb-14">
+            <div className="relative inline-block mb-3 sm:mb-5">
               <div className="absolute inset-0 bg-[#3C3C3C]/15 rounded-full blur-xl scale-150"></div>
-              <div className="relative w-12 h-12 sm:w-16 sm:h-16 bg-[#3C3C3C] rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <Heart className="h-6 w-6 sm:h-8 sm:w-8 text-[#E8DCC8]" />
+              <div className="relative w-10 h-10 sm:w-14 sm:h-14 bg-[#C9A55F] rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <Heart className="h-5 w-5 sm:h-7 sm:w-7 text-white" />
               </div>
             </div>
-            <h3 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] text-[#3C3C3C] mb-3 sm:mb-4">
+            <h3 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-white mb-2 sm:mb-3">
               Messages from Loved Ones
             </h3>
-            <p className="text-base sm:text-lg md:text-xl text-[#3C3C3C]/70 font-[family-name:var(--font-crimson)] font-light max-w-2xl mx-auto px-4 tracking-wide">
+            <p className="text-sm sm:text-base md:text-lg text-white font-[family-name:var(--font-crimson)] font-light max-w-2xl mx-auto px-2 sm:px-4 tracking-wide">
               Read the beautiful messages shared by family and friends
             </p>
           </div>

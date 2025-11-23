@@ -88,8 +88,8 @@ export function Navbar() {
     <nav
       className={`sticky top-0 z-50 transition-all duration-500 ease-out ${
         isScrolled
-          ? "bg-[#E8DCC8]/98 backdrop-blur-md shadow-sm border-b border-[#3C3C3C]/15"
-          : "bg-[#E8DCC8]/95 backdrop-blur-sm border-b border-[#3C3C3C]/10"
+          ? "bg-white/90 backdrop-blur-xl shadow-sm border-b border-[#C9A55F]/20 premium-shadow"
+          : "bg-white/70 backdrop-blur-lg border-b border-[#C9A55F]/15"
       }`}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative">
@@ -100,15 +100,15 @@ export function Navbar() {
               <div className="relative w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 group-hover:scale-105 transition-all duration-300">
                 <Image
                   src="/monogram/image.png"
-                  alt="Marvin & Annie Monogram"
+                  alt="Steven & Renee Monogram"
                   fill
                   className="object-contain"
                   priority
                 />
               </div>
 
-              {/* Names */}
-              <div className="text-xs sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-[#3C3C3C]/70 transition-all duration-300 tracking-[0.15em] sm:tracking-[0.2em] text-[#3C3C3C] uppercase">
+              {/* Names with gold gradient on hover */}
+              <div className="text-xs sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-[#C9A55F] transition-all duration-300 tracking-[0.15em] sm:tracking-[0.2em] text-[#4A4442] uppercase">
                 {siteConfig.couple.groomNickname} &{" "}
                 {siteConfig.couple.brideNickname}
               </div>
@@ -124,13 +124,13 @@ export function Navbar() {
                   href={link.href}
                   className={`px-3 lg:px-4 py-1.5 text-xs lg:text-sm font-[family-name:var(--font-crimson)] font-normal tracking-wide transition-all duration-300 relative group ${
                     isActive
-                      ? "text-[#3C3C3C]"
-                      : "text-[#3C3C3C]/70 hover:text-[#3C3C3C]"
+                      ? "text-[#C9A55F]"
+                      : "text-[#4A4442]/70 hover:text-[#C9A55F]"
                   }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 h-px bg-[#3C3C3C] transition-all duration-300 ${
+                    className={`absolute bottom-0 left-0 h-[1.5px] bg-gradient-to-r from-[#C9A55F] to-[#D4AF7A] transition-all duration-300 ${
                       isActive ? "w-full" : "w-0 group-hover:w-full"
                     }`}
                   />
@@ -146,11 +146,11 @@ export function Navbar() {
               socialItems={[]}
               displaySocials={false}
               displayItemNumbering={true}
-              menuButtonColor="#3C3C3C"
-              openMenuButtonColor="#E8DCC8"
+              menuButtonColor="#4A4442"
+              openMenuButtonColor="#C9A55F"
               changeMenuColorOnOpen={true}
-              colors={["#E8DCC8", "#F0E5D3", "#3C3C3C", "#3C3C3C", "#3C3C3C"]}
-              accentColor="#3C3C3C"
+              colors={["#FAF7F4", "#F0E5D3", "#E8D5D0", "#C9A55F", "#4A4442"]}
+              accentColor="#C9A55F"
               isFixed={true}
               onMenuOpen={() => {}}
               onMenuClose={() => {}}

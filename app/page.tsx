@@ -22,13 +22,13 @@ export default function Home() {
   const enableDecor = process.env.NEXT_PUBLIC_ENABLE_DECOR !== 'false'
 
   return (
-    <main className="relative">
+    <main className="relative elegant-gradient-bg min-h-screen">
       {enableDecor && <BackgroundMusic />}
       {/* Silk Background Animation */}
       {enableDecor && (
         <div className="fixed inset-0 z-0 pointer-events-none">
-          <Suspense fallback={<div className="w-full h-full bg-[#E8DCC8]" />}>
-            <Silk speed={3} scale={1.2} color="#E8DCC8" noiseIntensity={0.5} rotation={0.2} />
+          <Suspense fallback={<div className="w-full h-full elegant-gradient-bg" />}>
+            <Silk speed={2.5} scale={1.5} color="#E8D5D0" noiseIntensity={0.3} rotation={0.15} />
           </Suspense>
         </div>
       )}

@@ -1,67 +1,70 @@
 export const siteConfig = {
   couple: {
-    bride: "Angel Marie Claro",
-    brideNickname: "Angel",
-    groom: "Kenneth Adrian Zaragoza",
-    groomNickname: "Kenneth",
+    bride: "Renee Rose Torres",
+    brideNickname: "Renee",
+    groom: "Steven Paul Moraña",
+    groomNickname: "Steven",
   },
   wedding: {
-    date: "January 11, 2026",
-    time: "4:00 PM",
-    venue: "Camp Edgar Garden, Natures Village",
+    date: "March 21, 2026",
+    time: "3:00 PM",
+    venue: "Santa Clara Chapel (Barangay Sang Birhen Parish Church)",
     tagline: "are getting married!",
-    theme: "Spring Wedding 🌸",
-    motif: "Beige & Elegant",
+    theme: "Elegant Wedding ✨",
+    motif: "Champagne Gold & Neutral",
   },
   details: {
     rsvp: {
-      deadline: "December 20, 2025",
+      deadline: "March 10, 2026",
+      contacts: "+639271655509 | +639665949009",
+      names: "Renee & Steven"
     },
+    policies: {
+      attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
+      gifts: "We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.",
+      children: "We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)",
+      photos: "We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories"
+    }
   },
   ceremony: {
-    location: "Camp Edgar Garden, Natures Village",
-    venue: "Camp Edgar Garden, Natures Village",
-    date: "January 11, 2026",
-    day: "Sunday",
-    time: "4:00 PM",
-    entourageTime: "3:00 PM",
-    guestsTime: "3:30 PM",
+    location: "Santa Clara Chapel (Barangay Sang Birhen Parish Church)",
+    venue: "Santa Clara Chapel (Barangay Sang Birhen Parish Church)",
+    address: "Santo Domingo Ave, Santa Clara Subdivision, Bacolod City, Negros Occidental",
+    date: "March 21, 2026",
+    day: "Saturday",
+    time: "3:00 PM",
+    entourageTime: "2:00 PM",
+    guestsTime: "2:30 PM",
   },
   reception: {
-    location: "Camp Edgar Garden, Natures Village",
-    venue: "Camp Edgar Garden, Natures Village",
-    date: "January 11, 2026",
-    time: "3:00 PM",
+    location: "The Ruins, Talisay",
+    venue: "The Ruins, Talisay",
+    address: "Don Mariano L. Lacson Highway, Brgy. Zone 15, Talisay, Negros Occidental 6100",
+    date: "March 21, 2026",
+    time: "4:30 PM",
   },
   dressCode: {
-    theme: "Spring Wedding �",
-    colors: ["#0A3428", "#106552", "#751A2C", "#C3A161"],
+    theme: "Elegant Wedding ✨",
+    colors: ["#D4AF37", "#F5F5DC", "#C9B037", "#E8DCC4"],
+    description: "Barong Tagalog or Any Formal Attire and Long Gown in shades of Champagne Gold or Neutral Colors",
     sponsors: {
-      ladies: "White gown / long dress ",
-      gentlemen: "Black suit and tie"
+      ladies: "Long gown in champagne gold or neutral colors",
+      gentlemen: "Barong Tagalog or formal attire"
     },
     guests: {
-      ladies: "Long or cocktail dress",
-      gentlemen: "Long sleeve, polo, pants or suit"
+      ladies: "Long gown in champagne gold or neutral colors",
+      gentlemen: "Barong Tagalog or formal attire"
     },
-    note: "Please avoid jeans and casual attire."
+    note: "Dress code: Barong Tagalog or Any Formal Attire and Long Gown in shades of Champagne Gold or Neutral Colors"
   },
-  narrative: `In 2020, during the quiet days of the pandemic, fate found a way to bring two hearts together — one from Australia, and one from the Philippines. Through an online word game called Codenames, Brendan and Airez met. What started as playful teasing soon turned into long conversations, laughter, and a friendship that grew stronger with every passing day. \n
+  narrative: `Two hearts, one love story. Renee Rose and Steven Paul are ready to begin their forever together. \n
 
-For years, they were just friends — two souls connected across miles and time zones. But even through screens, something beautiful began to bloom. Their bond deepened, their connection strengthened, and before they knew it, friendship had turned into love. \n
+Join us as we celebrate their love and commitment to each other on this special day. \n
 
-Then came July 23, 2022 — the day they made it official in private. It was a quiet promise between two hearts who had found something rare and real — because for both Brendan and Airez, this was their first love. ❤️ \n
-
-A few months later, on October 23, 2022, Brendan flew from Australia to the Philippines to finally meet Airez in person — and her family for the first time. That day was filled with emotions, laughter, and happy tears. It was also the day they made their relationship public, proudly sharing their love with the world after keeping it private for so long. \n
-
-In July 2025, their story reached a beautiful turning point. Brendan, together with his parents, returned to the Philippines to meet Airez’s family once again and proposed in front of them — a heartfelt moment that brought both families together in love and joy. \n
-
-From a simple online game to a love that grew through distance, patience, and faith — their journey is a beautiful reminder that true love knows no distance and always finds its way. \n
-
-And now, hand in hand, heart to heart, Brendan and Airez are ready to begin their forever — a lifetime of love, laughter, and endless “us.” ❤️`,
+Together with their families, they invite you to witness the beginning of their beautiful journey as husband and wife. ❤️`,
   colors: {
-    primary: "#0A3428",
-    secondary: "#106552",
+    primary: "#D4AF37",
+    secondary: "#C9B037",
   },
 }
 
