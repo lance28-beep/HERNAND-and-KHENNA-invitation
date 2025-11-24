@@ -388,10 +388,6 @@ export function Details() {
                     <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#9F8650] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#9F8650]/20" />
                     <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#0A3629]/70">Warm Gold</span>
                   </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#F9F8F4] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#F9F8F4]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#0A3629]/70">Cream</span>
-                  </div>
                 </div>
               </div>
             </div>
