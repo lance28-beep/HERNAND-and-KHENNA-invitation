@@ -34,7 +34,7 @@ const BackgroundMusic = () => {
   return (
     <audio
       ref={audioRef}
-      src="/background_music/ROYALTY FREE MUSIC Instrumental Music  Inspirational Wedding Music Royalty Free  MUSIC4VIDEO.mp3"
+      src="/background_music/Donna Lewis I Love You Always Forever  Piano Cover.mp3"
       loop
       preload="auto"
       playsInline
