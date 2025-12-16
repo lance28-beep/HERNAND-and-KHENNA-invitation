@@ -551,7 +551,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 .sm-scope:not([data-open]) .staggered-menu-header { pointer-events: none; }
 .sm-scope:not([data-open]) .staggered-menu-panel { pointer-events: none; visibility: hidden; }
 .sm-scope:not([data-open]) .sm-prelayers { pointer-events: none; visibility: hidden; }
-.sm-scope .staggered-menu-header { position: absolute; top: 0; left: 0; width: 100%; display: flex; align-items: center; justify-content: flex-end; padding: 2em; background: transparent; pointer-events: none; z-index: 20; }
+ .sm-scope .staggered-menu-header { position: absolute; top: 0.35rem; left: 0; width: 100%; display: flex; align-items: center; justify-content: flex-end; padding: 2em; background: transparent; pointer-events: none; z-index: 20; }
 .sm-scope .staggered-menu-header > * { pointer-events: auto; }
 .sm-scope .sm-toggle { position: relative; display: inline-flex; align-items: center; gap: 0.3rem; background: transparent; border: none; cursor: pointer; color: white; font-weight: 500; line-height: 1; overflow: visible; font-family: var(--font-crimson); }
 .sm-scope .sm-toggle:focus-visible { outline: 2px solid #ffffffaa; outline-offset: 4px; border-radius: 4px; }

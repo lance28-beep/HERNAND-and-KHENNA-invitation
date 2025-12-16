@@ -19,28 +19,26 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           loop
           playsInline
         >
-          <source src="/video/hero-loop.mp4" type="video/mp4" />
+          <source src="/video/Flowers - Video Background HD 1080p - iBrand Boost (1080p, h264).mp4" type="video/mp4" />
         </video>
 
         {/* Soft overlay tint */}
-        <div className="absolute inset-0 bg-[#EFCA93]/55 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#8C8E7C]/55 pointer-events-none" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center p-6 w-full max-w-md mx-auto h-full">
         
         {/* Top Logo/Monogram */}
-        <FadeIn show={visible} delay={300} className="mb-auto mt-8">
-          <div className="w-20 h-24 border border-[#800A06]/40 rounded-[2rem] flex items-center justify-center backdrop-blur-sm bg-[#EFCA93]/90">
-            <div className="relative w-14 h-14">
-              <Image
-                src="/monogram/monogram-new.png"
-                alt="Mark Joey & Diana Grace Monogram"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
+        <FadeIn show={visible} delay={300} className="mb-auto mt-10">
+          <div className="relative w-24 h-24 sm:w-28 sm:h-28">
+            <Image
+              src="/monogram/hero mongoram.png"
+              alt="Hernand & Khenna Monogram"
+              fill
+              className="object-contain brightness-0 invert drop-shadow-[0_0_25px_rgba(255,228,228,0.9)]"
+              priority
+            />
           </div>
         </FadeIn>
 
@@ -49,11 +47,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         <div className="flex flex-col items-center justify-end w-full gap-4 pb-14 sm:pb-16 md:pb-20">
           <FadeIn show={visible} delay={600}>
             <h2
-              className="text-6xl md:text-8xl transform -rotate-6 drop-shadow-lg opacity-95 text-[#800A06]"
+              className="text-6xl md:text-8xl transform -rotate-6 drop-shadow-lg opacity-95 text-[#FFE4E4]"
               style={{
                 fontFamily: '"Great Vibes", cursive',
                 fontWeight: 400,
-                textShadow: '0 4px 14px rgba(0,0,0,0.25)',
+                textShadow: '0 0 18px rgba(255,228,228,0.95)',
               }}
             >
               You are
@@ -62,20 +60,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           
           <FadeIn show={visible} delay={900}>
             <h1
-              className="text-5xl md:text-7xl font-bold tracking-wider uppercase drop-shadow-[0_8px_20px_rgba(0,0,0,0.3)] text-[#800A06]"
+              className="text-5xl md:text-7xl font-bold tracking-wider uppercase drop-shadow-[0_0_30px_rgba(255,228,228,0.95)] text-[#FFE4E4]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontWeight: 700,
               }}
             >
-              Invited!
+              Invited
             </h1>
           </FadeIn>
 
           <FadeIn show={visible} delay={1500}>
             <button 
               onClick={onOpen}
-              className="group relative px-10 py-4 bg-[#800A06] text-[#F9F8F4] font-serif text-sm tracking-[0.2em] uppercase transition-all duration-500 hover:bg-[#9F8650] shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 rounded-sm overflow-hidden"
+              className="group relative px-10 py-4 bg-[#676B57] text-[#F9F8F4] font-serif text-sm tracking-[0.2em] uppercase transition-all duration-500 hover:bg-[#8C8E7C] shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 rounded-sm overflow-hidden"
             >
               <span
                 className="relative z-10 text-[#F9F8F4]"

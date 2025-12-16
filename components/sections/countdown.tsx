@@ -21,10 +21,10 @@ export function Countdown() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      // Target: February 8, 2026 at 2:30 PM GMT+8
+      // Target: February 8, 2026 at 4:00 PM GMT+8
       // Compute using UTC to avoid timezone parsing inconsistencies across browsers
-      // 2:30 PM GMT+8 == 06:30 AM UTC
-      const targetDate = Date.UTC(2026, 1, 8, 6, 30, 0) // February is month 1 (0-indexed)
+      // 4:00 PM GMT+8 == 08:00 AM UTC
+      const targetDate = Date.UTC(2026, 1, 8, 8, 0, 0) // February is month 1 (0-indexed)
       const now = new Date().getTime()
       const difference = targetDate - now
 
@@ -56,7 +56,7 @@ export function Countdown() {
       {/* Compact elegant card with earth tone accents */}
       <div className="relative group">
         {/* Subtle earth tone glow on hover */}
-        <div className="absolute -inset-0.5 bg-gradient-to-br from-[#9F8650]/20 to-[#800A06]/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md" />
+        <div className="absolute -inset-0.5 bg-gradient-to-br from-[#9F8650]/20 to-[#FFE4E4]/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md" />
         
         {/* Main card - more compact for mobile */}
         <div className="relative elegant-card rounded-lg sm:rounded-xl px-2.5 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-6 lg:py-6 border border-[#9F8650]/30 premium-shadow hover:border-[#9F8650]/50 transition-all duration-300 min-w-[60px] sm:min-w-[70px] md:min-w-[85px] lg:min-w-[95px]">
@@ -68,7 +68,7 @@ export function Countdown() {
               fontSize={28}
               padding={4}
               gap={2}
-              textColor="#800A06"
+              textColor="#676B57"
               fontWeight={700}
               borderRadius={6}
               horizontalPadding={3}
@@ -81,7 +81,7 @@ export function Countdown() {
       </div>
 
       {/* Compact label */}
-      <span className="text-[10px] sm:text-xs font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-wide">
+      <span className="text-[10px] sm:text-xs font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] uppercase tracking-wide">
         {label}
       </span>
     </div>
@@ -93,20 +93,20 @@ export function Countdown() {
       className="relative py-16 sm:py-20 md:py-24 lg:py-28"
     >
       {/* Semi-transparent overlay for better text readability */}
-      <div className="absolute inset-0 bg-[#EFCA93] backdrop-blur-sm pointer-events-none" />
+      <div className="absolute inset-0 bg-[#8C8E7C] backdrop-blur-sm pointer-events-none" />
       
       {/* Header - More compact for mobile */}
       <div className="relative z-10 text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6">
         <div className="flex items-center justify-center gap-2 mb-4">
           <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
         </div>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
           Countdown to Our Special Day
         </h2>
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
           <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
         </div>
-        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
+        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#FFE4E4]/90 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
           Every moment brings us closer to forever
         </p>
       </div>
@@ -127,21 +127,21 @@ export function Countdown() {
             <div className="text-center mb-6 sm:mb-8 md:mb-10">
               {/* Top decorative line */}
               <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#9F8650] to-[#9F8650]" />
-                <div className="w-1.5 h-1.5 bg-[#9F8650] rounded-full" />
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#9F8650] to-[#9F8650]" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
+                <div className="w-1.5 h-1.5 bg-[#FFE4E4] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
               </div>
               
               {/* Save The Date text - Better readability */}
-              <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-bold text-[#800A06] uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-3 sm:mb-4">
+              <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-bold text-[#FFE4E4] uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-3 sm:mb-4">
                 Save The Date
               </p>
               
               {/* Bottom decorative line */}
               <div className="flex items-center justify-center gap-2 sm:gap-3">
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#9F8650] to-[#9F8650]" />
-                <div className="w-1.5 h-1.5 bg-[#9F8650] rounded-full" />
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#9F8650] to-[#9F8650]" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
+                <div className="w-1.5 h-1.5 bg-[#FFE4E4] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export function Countdown() {
             <div className="text-center mb-6 sm:mb-8 md:mb-10">
               {/* Month - Script style with earth tones, smaller for mobile */}
               <div className="mb-3 sm:mb-4 md:mb-5">
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-ephesis)] text-[#800A06] leading-none">
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-ephesis)] text-[#FFE4E4] leading-none">
                   February
                 </p>
               </div>
@@ -157,15 +157,15 @@ export function Countdown() {
               {/* Day and Year - Horizontal layout with divider, more compact */}
               <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 mb-5 sm:mb-6">
                 {/* Day - Large and bold but scaled for mobile */}
-                <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] leading-none elegant-text-shadow">
+                <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] leading-none elegant-text-shadow">
                   8
                 </p>
                 
                 {/* Vertical divider with earth tone gradient - shorter */}
-                <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-[#9F8650] via-[#800A06] to-[#9F8650]" />
+                <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-[#FFE4E4]/40 via-[#FFE4E4]/80 to-[#FFE4E4]/40" />
                 
                 {/* Year - Elegant and refined, smaller for mobile */}
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] leading-none">
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] leading-none">
                   2026
                 </p>
               </div>
@@ -175,21 +175,21 @@ export function Countdown() {
             <div className="text-center">
               {/* Top decorative line */}
               <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#9F8650] to-[#9F8650]" />
-                <div className="w-1.5 h-1.5 bg-[#9F8650] rounded-full" />
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#9F8650] to-[#9F8650]" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
+                <div className="w-1.5 h-1.5 bg-[#FFE4E4] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
               </div>
               
               {/* Time - Better readability */}
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide mb-3 sm:mb-4">
-                2:30 PM
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] tracking-wide mb-3 sm:mb-4">
+                4:00 PM
               </p>
               
               {/* Bottom decorative line */}
               <div className="flex items-center justify-center gap-2 sm:gap-3">
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#9F8650] to-[#9F8650]" />
-                <div className="w-1.5 h-1.5 bg-[#9F8650] rounded-full" />
-                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#9F8650] to-[#9F8650]" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-r from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
+                <div className="w-1.5 h-1.5 bg-[#FFE4E4] rounded-full" />
+                <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
               </div>
             </div>
           </div>

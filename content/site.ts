@@ -1,23 +1,23 @@
 export const siteConfig = {
   couple: {
-    bride: "Diana Grace Villorente",
-    brideNickname: "Diana Grace",
-    groom: "Mark Joey Ulzame",
-    groomNickname: "Mark Joey",
+    bride: "Ma. Khenna Mae G. Dela Cruz",
+    brideNickname: "Khenna",
+    groom: "Hernand Amor C. Macoy",
+    groomNickname: "Hernand",
   },
   wedding: {
     date: "February 8, 2026",
-    time: "2:30 PM",
-    venue: "San Lorenzo Ruiz Parish Church",
+    time: "4:00 PM",
+    venue: "Las Casas Quezon City",
     tagline: "are getting married!",
-    theme: "Elegant Wedding ✨",
-    motif: "Autumn Theme",
+    theme: "Filipiniana ✨",
+    motif: "Filipiniana",
   },
   details: {
     rsvp: {
       deadline: "January 25, 2026",
       contacts: "+639XXXXXXXXX | +639XXXXXXXXX",
-      names: "Mark Joey & Diana Grace"
+      names: "Khenna & Hernand"
     },
     policies: {
       attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
@@ -27,44 +27,44 @@ export const siteConfig = {
     }
   },
   ceremony: {
-    location: "San Lorenzo Ruiz Parish Church",
-    venue: "San Lorenzo Ruiz Parish Church",
-    address: "Fairlane Subdivision, Tarlac City",
+    location: "Las Casas Quezon City",
+    venue: "Las Casas Quezon City",
+    address: "Quezon City, Philippines",
     date: "February 8, 2026",
     day: "Sunday",
-    time: "2:30 PM",
-    entourageTime: "1:30 PM",
-    guestsTime: "2:00 PM",
+    time: "4:00 PM",
+    entourageTime: "3:00 PM",
+    guestsTime: "3:30 PM",
   },
   reception: {
-    location: "Cz Ranch",
-    venue: "Cz Ranch",
-    address: "Capas, Tarlac",
+    location: "Las Casas Quezon City",
+    venue: "Las Casas Quezon City",
+    address: "Quezon City, Philippines",
     date: "February 8, 2026",
     time: "4:00 PM",
   },
   dressCode: {
-    theme: "Elegant Wedding ✨",
-    colors: ["#800A06", "#6A1F08", "#9B4719", "#FAAF38", "#EFCA93", "#EFD2AA"],
-    description: "Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please.",
+    theme: "Filipiniana",
+    colors: ["#676B57", "#8C8E7C", "#B18B81", "#EFC0BC", "#FFE4E4"],
+    description: "Filipiniana attire. Gentlemen in barong or grey duct uniforms; ladies in Filipiniana styles in any shade except red, white, and black.",
     sponsors: {
-      ladies: "Champagne or Gold long gowns",
-      gentlemen: "Barong Tagalog & Black Slacks"
+      ladies: "Filipiniana silhouettes (no red, white, or black)",
+      gentlemen: "Barong Tagalog or gray duct uniforms"
     },
     guests: {
-      ladies: "Earth tones long gowns (no prints)",
-      gentlemen: "Barong & black slacks or formal wear"
+      ladies: "Filipiniana-inspired dresses; avoid red, white, and black",
+      gentlemen: "Barong or gray duct uniforms"
     },
-    note: "Dress code: Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please."
+    note: "No specific shades required; just keep it Filipiniana. Please skip red, white, and black."
   },
-  narrative: `Two hearts, one love story. Mark Joey and Diana Grace are ready to begin their forever together. \n
+  narrative: `Two hearts, one love story. Khenna and Hernand are ready to begin their forever together. \n
 
 Join us as we celebrate their love and commitment to each other on this special day. \n
 
 Together with their families, they invite you to witness the beginning of their beautiful journey as husband and wife. ❤️`,
   colors: {
-    primary: "#800A06",
-    secondary: "#6A1F08",
+    primary: "#B8860B",
+    secondary: "#D2B48C",
   },
 }
 
