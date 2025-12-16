@@ -28,13 +28,13 @@ export function Details() {
   // Updated venue information
   const ceremonyVenueName = "Las Casas Quezon City"
   const ceremonyVenueDetail = ""
-  const ceremonyAddress = "Quezon City, Philippines"
+  const ceremonyAddress = "134 Roosevelt Avenue, San Francisco del Monte, Quezon City, Metro Manila"
   const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyAddress}`
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(ceremonyVenue)}`
 
   const receptionVenueName = "Las Casas Quezon City"
   const receptionVenueDetail = ""
-  const receptionAddress = "Quezon City, Philippines"
+  const receptionAddress = "134 Roosevelt Avenue, San Francisco del Monte, Quezon City, Metro Manila"
   const receptionVenue = `${receptionVenueName}, ${receptionAddress}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(receptionVenue)}`
 

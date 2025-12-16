@@ -36,152 +36,99 @@ export default function MessageWallDisplay({ messages, loading }: MessageWallDis
 
   if (loading) {
     return (
-      <div className="relative">
-        {/* Corner Decorations - All 4 Corners */}
-        <div className="absolute top-0 left-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-x-[-1]"
-          />
-        </div>
-        <div className="absolute top-0 right-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50"
-          />
-        </div>
-        <div className="absolute bottom-0 left-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-x-[-1] scale-y-[-1]"
-          />
-        </div>
-        <div className="absolute bottom-0 right-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-y-[-1]"
-          />
-        </div>
-        <div className="relative z-10 space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-7">
+      <div className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-6">
         {[1, 2, 3].map((i) => (
-          <Card key={i} className="border border-[#EFC0BC]/80 shadow-sm rounded-lg" style={{ backgroundColor: '#FFE4E4' }}>
-            <CardContent className="py-4 px-4 sm:py-5 sm:px-5 md:py-6 md:px-7" style={{ backgroundColor: '#FFE4E4' }}>
-              <Skeleton className="h-16 sm:h-20 md:h-24 w-full mb-3 sm:mb-4" />
-              <div className="flex items-center gap-2.5 sm:gap-3 pt-3 sm:pt-4 border-t border-[#B18B81]/20">
-                <Skeleton className="w-8 h-8 sm:w-9 sm:h-9 rounded-full" />
-                <div className="flex-1 space-y-1.5 sm:space-y-2">
-                  <Skeleton className="h-3 sm:h-3.5 w-20 sm:w-24" />
-                  <Skeleton className="h-2.5 sm:h-3 w-16 sm:w-20" />
+          <Card key={i} className="border-2 border-[#E0CFB5]/70 shadow-lg bg-white/85 backdrop-blur-md rounded-xl sm:rounded-2xl">
+            <CardContent className="p-2.5 sm:p-3 md:p-4 lg:p-5">
+              <div className="flex justify-between items-start mb-2 sm:mb-3 md:mb-4">
+                <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+                  <Skeleton className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-[#525E2C]/35 via-[#909E8D]/30 to-[#E0CFB5]/30" />
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <Skeleton className="h-3 w-20 sm:w-24 md:w-32 bg-white/30" />
+                    <Skeleton className="h-2.5 w-16 sm:w-20 md:w-24 bg-white/20" />
+                  </div>
+                </div>
+                <div className="flex gap-1.5 sm:gap-2">
+                  <Skeleton className="w-3 h-3 sm:w-4 sm:h-4 rounded bg-white/25" />
+                  <Skeleton className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded bg-white/15" />
                 </div>
               </div>
+              <Skeleton className="h-12 sm:h-14 md:h-16 w-full bg-gradient-to-r from-[#525E2C]/14 via-[#909E8D]/10 to-[#E0CFB5]/16 rounded-lg" />
             </CardContent>
           </Card>
         ))}
-        </div>
       </div>
     )
   }
 
   if (messages.length === 0) {
     return (
-      <div className="relative text-center py-8 sm:py-12 px-4 overflow-hidden">
-        {/* Corner Decorations - All 4 Corners */}
-
-    
-    
-    
-        <div className="relative z-10">
-            <div className="relative inline-block mb-4 sm:mb-6">
-          <div className="absolute inset-0 bg-[#EFC0BC]/60 rounded-full blur-xl scale-150"></div>
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 bg-[#676B57] rounded-full flex items-center justify-center mx-auto shadow-lg">
-            <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6 text-[#FFE4E4]" />
+      <div className="text-center py-6 sm:py-10 md:py-14 lg:py-16 xl:py-20 px-2 sm:px-4">
+        <div className="relative inline-block mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#525E2C]/45 to-[#909E8D]/30 rounded-full blur-xl scale-150 animate-pulse-slow" />
+          <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#E0CFB5] rounded-full flex items-center justify-center mx-auto shadow-lg">
+            <MessageCircle className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-white" />
           </div>
+          {/* Outer decorative rings */}
+          <div className="absolute -inset-2 sm:-inset-3 rounded-full border-2 border-white/25 animate-ping"></div>
+          <div className="absolute -inset-1.5 sm:-inset-2 rounded-full border border-white/40"></div>
         </div>
-        <h3 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] mb-2 sm:mb-3 uppercase tracking-wider">
+        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-playfair font-bold text-white mb-2 sm:mb-3 md:mb-4 drop-shadow-lg">
           No Messages Yet
         </h3>
-        <p className="text-xs sm:text-sm md:text-base text-[#FFE4E4] font-[family-name:var(--font-crimson)] font-light max-w-md mx-auto leading-relaxed tracking-wide">
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/95 font-lora max-w-md mx-auto leading-relaxed mb-4 sm:mb-5 md:mb-6">
           Be the first to share your heartfelt wishes for the happy couple!
         </p>
-        <div className="mt-4 sm:mt-6 flex justify-center">
-          <div className="flex items-center gap-1.5 sm:gap-2">
-            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#FFE4E4]" />
-            <span className="text-[10px] sm:text-xs font-[family-name:var(--font-crimson)] text-[#FFE4E4]">Your message will appear here</span>
-            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#FFE4E4]" />
+        <div className="mt-4 sm:mt-5 md:mt-6 lg:mt-8 flex justify-center">
+          <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full border border-[#E0CFB5]/60">
+            <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 text-[#E0CFB5] animate-pulse" />
+            <span className="text-[10px] sm:text-xs md:text-sm font-lora text-white/90">Your message will appear here</span>
+            <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 text-[#F0F0EE] animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
-        </div>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="relative overflow-hidden">
-      {/* Soft gradient backdrop to match palette */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#FFE4E4] via-white to-[#FFE4E4] opacity-90" />
-      <div className="absolute inset-x-4 sm:inset-x-8 top-6 bottom-6 bg-gradient-to-r from-[#EFC0BC]/40 via-transparent to-[#EFC0BC]/40 blur-2xl rounded-[32px]" />
-      {/* Corner Decorations - All 4 Corners */}
-      <div className="absolute top-0 left-0 z-[1] pointer-events-none">
-        <img 
-          src="/decoration/top-right-corner-automleaves.png" 
-          alt="Autumn leaves decoration"
-          className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-x-[-1]"
-        />
-      </div>
-      <div className="absolute top-0 right-0 z-[1] pointer-events-none">
-        <img 
-          src="/decoration/top-right-corner-automleaves.png" 
-          alt="Autumn leaves decoration"
-          className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50"
-        />
-      </div>
-      <div className="absolute bottom-0 left-0 z-[1] pointer-events-none">
-        <img 
-          src="/decoration/top-right-corner-automleaves.png" 
-          alt="Autumn leaves decoration"
-          className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-x-[-1] scale-y-[-1]"
-        />
-      </div>
-      <div className="absolute bottom-0 right-0 z-[1] pointer-events-none">
-        <img 
-          src="/decoration/top-right-corner-automleaves.png" 
-          alt="Autumn leaves decoration"
-          className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-y-[-1]"
-        />
-      </div>
-      <div className="relative z-10 space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-7">
+    <div className="space-y-2 sm:space-y-2.5 md:space-y-3 lg:space-y-4">
       {visibleMessages.map((msg, index) => (
         <Card
           key={index}
-          className={`relative border border-[#EFC0BC]/80 shadow-sm hover:shadow-lg hover:border-[#B18B81]/70 transition-all duration-300 group rounded-lg ${
+          className={`relative border-2 border-[#E0CFB5]/75 shadow-lg bg-white/88 backdrop-blur-md hover:shadow-2xl hover:border-[#E0CFB5] transition-all duration-500 group overflow-hidden transform rounded-xl sm:rounded-2xl hover:scale-[1.01] ${
             isAnimating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
           style={{
             transitionDelay: `${index * 100}ms`,
             animation: isAnimating ? 'none' : 'fadeInUp 0.6s ease-out forwards',
-            backgroundColor: '#FFE4E4'
+            boxShadow: '0 4px 18px rgba(0,0,0,0.18), 0 2px 8px rgba(82, 94, 44, 0.18)'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = '0 8px 26px rgba(0,0,0,0.26), 0 4px 12px rgba(82, 94, 44, 0.25)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.18), 0 2px 8px rgba(82, 94, 44, 0.18)';
           }}
         >
-          <CardContent className="relative py-4 px-4 sm:py-5 sm:px-6 md:py-6 md:px-7" style={{ backgroundColor: '#FFE4E4' }}>
-            {/* Message content with elegant quotation marks */}
-            <div className="relative mb-3 sm:mb-4 md:mb-5">
-              <span className="absolute -left-2 -top-3 sm:-left-3 sm:-top-4 md:-left-4 md:-top-5 text-4xl sm:text-5xl md:text-6xl text-[#B18B81]/25 font-[family-name:var(--font-crimson)] leading-none select-none group-hover:text-[#B18B81]/35 transition-colors">"</span>
-              <div className="relative pl-6 sm:pl-8 md:pl-10 pr-4 sm:pr-6 md:pr-8 pt-2 sm:pt-3 pb-1.5 sm:pb-2">
-                <p className="text-[#676B57] text-sm sm:text-base md:text-lg leading-relaxed font-[family-name:var(--font-crimson)] font-light tracking-wide">{msg.message}</p>
-              </div>
-              <span className="absolute -right-2 -bottom-1 sm:-right-3 sm:-bottom-2 md:-right-4 md:-bottom-3 text-4xl sm:text-5xl md:text-6xl text-[#B18B81]/25 font-[family-name:var(--font-crimson)] leading-none select-none group-hover:text-[#B18B81]/35 transition-colors">"</span>
-            </div>
-            
-            {/* Author info at bottom with elegant divider */}
-              <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-[#B18B81]/25">
-              <div className="flex items-center gap-2.5 sm:gap-3">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 sm:w-9 sm:h-9 bg-[#FFE4E4] rounded-full flex items-center justify-center shadow-sm group-hover:shadow transition-shadow border border-[#EFC0BC]">
-                    <span className="text-[#676B57] font-[family-name:var(--font-crimson)] text-xs sm:text-sm font-semibold">
+          {/* Enhanced card background effects */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#E0CFB5]/18 via-transparent to-[#F0F0EE]/18 opacity-70 group-hover:opacity-95 transition-opacity duration-300" />
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#525E2C]/55 via-[#909E8D]/60 to-[#E0CFB5]/55 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+          <div className="absolute -inset-[1px] rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ boxShadow: 'inset 0 0 0 1px rgba(102, 0, 51, 0.25)' }} />
+          
+          {/* Subtle shimmer effect on hover */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/22 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+          
+          {/* Simple inner border */}
+          <div className="absolute inset-2 sm:inset-3 rounded-xl pointer-events-none">
+            <div className="absolute inset-0 rounded-xl border border-white/15 group-hover:border-white/35 transition-colors duration-300" />
+          </div>
+          
+          <CardContent className="relative p-2 sm:p-2.5 md:p-3 lg:p-3.5">
+            <div className="flex justify-between items-start mb-1.5 sm:mb-2 md:mb-2.5">
+              <div className="flex items-center space-x-1.5 sm:space-x-2 md:space-x-2.5">
+                <div className="relative">
+                  <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-[#525E2C] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg ring-2 ring-white/70">
+                    <span className="text-white font-lora text-xs sm:text-sm md:text-base font-semibold drop-shadow-sm">
                       {msg.name
                         .split(" ")
                         .map((n) => n[0])
@@ -189,24 +136,56 @@ export default function MessageWallDisplay({ messages, loading }: MessageWallDis
                         .toUpperCase()}
                     </span>
                   </div>
+                  {/* Subtle avatar glow */}
+                  <div className="absolute -inset-1 rounded-full bg-[#525E2C]/30 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
                 </div>
-                <div>
-                  <h4 className="font-[family-name:var(--font-crimson)] text-[#676B57] text-xs sm:text-sm md:text-base font-semibold leading-tight">{msg.name}</h4>
-                  <span className="text-[10px] sm:text-xs text-[#676B57]/50 font-[family-name:var(--font-crimson)] tracking-wide">
-                    {new Date(msg.timestamp).toLocaleDateString("en-US", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric"
-                    })}
-                  </span>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-baseline gap-1 sm:gap-1.5">
+                    <h4 className="font-lora text-[#1F2420] text-xs sm:text-sm md:text-base font-semibold truncate group-hover:text-[#525E2C] transition-colors duration-300">
+                      {msg.name}
+                    </h4>
+                    <span className="text-[9px] sm:text-[10px] md:text-xs text-[#37413A]/70 font-lora truncate">
+                      {new Date(msg.timestamp).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      })}
+                    </span>
+                  </div>
                 </div>
               </div>
-              <Heart className="flex-shrink-0 h-4 w-4 sm:h-5 sm:w-5 text-[#B18B81]/60 fill-[#B18B81]/20 group-hover:text-[#676B57] group-hover:fill-[#676B57]/35 transition-all duration-300" />
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <Heart className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#525E2C]/80 fill-[#E0CFB5]/20 group-hover:fill-[#E0CFB5]/45 group-hover:text-[#525E2C] transition-all duration-300 group-hover:scale-110" />
+                <Sparkles className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-4 md:w-4 text-[#E0CFB5]/85 group-hover:text-[#F0F0EE] transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
+              </div>
+            </div>
+            
+            <div className="relative">
+              <span className="absolute -left-0.5 -top-0.5 sm:-left-1 sm:-top-1 md:-left-2 md:-top-2 text-xl sm:text-2xl md:text-4xl text-[#525E2C]/30 font-playfair group-hover:text-[#525E2C]/55 transition-all duration-300 group-hover:scale-110">
+                "
+              </span>
+              <p className="text-[#243127]/90 text-xs sm:text-sm md:text-base leading-snug sm:leading-relaxed pl-3 sm:pl-4 md:pl-6 font-lora group-hover:text-[#151C16]/95 transition-colors duration-300">
+                {msg.message}
+              </p>
+              <span className="absolute -right-0.5 -bottom-0.5 sm:-right-1 sm:-bottom-1 md:-right-2 md:-bottom-2 text-xl sm:text-2xl md:text-4xl text-[#E0CFB5]/40 font-playfair group-hover:text-[#E0CFB5]/70 transition-all duration-300 group-hover:scale-110">
+                "
+              </span>
+            </div>
+            
+              {/* Enhanced message bottom accent */}
+            <div className="mt-1.5 sm:mt-2 md:mt-3 flex items-center justify-between">
+                <div className="flex items-center gap-0.5 sm:gap-1 text-[9px] sm:text-[10px] text-[#37413A]/65">
+                  <div className="w-1 h-1 rounded-full bg-[#525E2C]/80" />
+                  <div className="w-1 h-1 rounded-full bg-[#909E8D]/80" />
+                  <div className="w-1 h-1 rounded-full bg-[#E0CFB5]/80" />
+              </div>
+                <div className="w-14 sm:w-16 h-0.5 bg-gradient-to-r from-transparent via-[#525E2C]/70 to-transparent group-hover:via-[#E0CFB5]/85 transition-all duration-300" />
             </div>
           </CardContent>
         </Card>
       ))}
-      </div>
       
       {/* Custom CSS for animations */}
       <style jsx>{`

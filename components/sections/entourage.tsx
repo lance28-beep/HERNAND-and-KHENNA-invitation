@@ -217,12 +217,12 @@ export function Entourage() {
 
       {/* Central Card Container */}
       <div className="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 md:px-6">
-        {/* Main card with elegant styling */}
+        {/* Main card with elegant styling – matched to Principal Sponsors */}
         <div className="relative group">
-          {/* Subtle glow on hover */}
-          <div className="absolute -inset-1 bg-gradient-to-br from-[#B18B81]/25 to-[#EFC0BC]/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+          {/* Subtle earth tone glow on hover (same palette as Principal Sponsors) */}
+          <div className="absolute -inset-1 bg-gradient-to-br from-[#9F8650]/20 to-[#676B57]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
 
-          <div className="relative bg-[#FFE4E4] backdrop-blur-sm rounded-xl sm:rounded-2xl border-2 border-[#EFC0BC]/80 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#B18B81] overflow-hidden">
+          <div className="relative elegant-card rounded-xl sm:rounded-2xl overflow-hidden border border-[#9F8650]/30 premium-shadow hover:border-[#9F8650]/50 transition-all duration-300">
             {/* Card content */}
             <div className="relative p-4 sm:p-6 md:p-8 lg:p-10">
               {isLoading ? (
