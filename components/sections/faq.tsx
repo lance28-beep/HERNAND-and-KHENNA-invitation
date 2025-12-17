@@ -133,7 +133,7 @@ export function FAQ() {
                         aria-expanded={isOpen}
                         aria-controls={contentId}
                       >
-                        <span className="font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] pr-3 sm:pr-4 text-xs sm:text-sm md:text-base leading-relaxed group-hover:text-[#676B57]/80 transition-colors duration-200">
+                        <span className="font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] pr-3 sm:pr-4 text-sm sm:text-base md:text-lg leading-relaxed group-hover:text-[#676B57]/80 transition-colors duration-200">
                           {item.question}
                         </span>
                         <ChevronDown
@@ -155,7 +155,7 @@ export function FAQ() {
                         <div className="overflow-hidden">
                           <div className="px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4 bg-white/70 border-t border-[#EFC0BC]/80">
                             {item.answer.includes("[RSVP_LINK]") ? (
-                              <p className="text-[#676B57]/80 leading-relaxed text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] whitespace-pre-line">
+                              <p className="text-[#676B57]/80 leading-relaxed text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] whitespace-pre-line">
                                 {item.answer.split("[RSVP_LINK]")[0]}
                                 <a
                                   href="#guest-list"
@@ -176,7 +176,7 @@ export function FAQ() {
                                 {item.answer.split("[/RSVP_LINK]")[1]}
                               </p>
                             ) : (
-                              <p className="text-[#676B57]/80 leading-relaxed text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] whitespace-pre-line">
+                              <p className="text-[#676B57]/80 leading-relaxed text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] whitespace-pre-line">
                                 {item.answer}
                               </p>
                             )}
