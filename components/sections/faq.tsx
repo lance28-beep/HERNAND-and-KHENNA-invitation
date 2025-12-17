@@ -13,57 +13,67 @@ const faqItems: FAQItem[] = [
   {
     question: "When and where is the wedding?",
     answer:
-      "Our wedding will be on Sunday, February 8, 2026 at 4:00 PM.\n\nBoth the ceremony and reception will be held at Las Casas Quezon City, Quezon City, Philippines.",
+      "Our wedding will be on Sunday, February 8, 2026, at 4:00 PM.\n\nBoth the ceremony and reception will be held at Las Casas Filipinas de Acuzar – Quezon City (Casa Cilayko), Quezon City, Philippines.\n\nThe wedding ceremony will begin promptly at 4:00 PM, followed by a short interlude before the reception program starts at 6:00 PM. During this time, guests are welcome to relax and enjoy the beautiful surroundings of Las Casas.\n\nAs the venue is an open heritage space, it may feel warm while waiting, especially in the late afternoon. For your comfort, we kindly suggest bringing handheld fans or any personal items that help you stay cool and comfortable, so you may fully enjoy the celebration with ease.",
   },
   {
     question: "What is the dress code?",
     answer:
-      "Guest Attire:\n• Ladies: Filipiniana-inspired silhouettes in any shade you love, kindly avoiding red, white, and black.\n• Gentlemen: Barong Tagalog or grey duct uniforms in your preferred tone.\n\nPrincipal Sponsors:\n• Ninangs: Champagne or Gold long gowns.\n• Ninongs: Barong Tagalog & Black Slacks.\n\nThese guidelines follow our Attire Guidelines section and help keep the look of the celebration cohesive and elegant.",
+      "Guest Attire:\n• Gentlemen: Barong Tagalog, slacks, or ceremonial uniform (e.g., grey duct or other formal uniform).\n• Ladies: Filipiniana gown.\n\nColors and Style: No restriction on colors except please avoid red, black, and white.\n\nFootwear: Formal shoes or heels suitable for church and reception venues.",
   },
   {
     question: "When is the RSVP deadline?",
     answer:
-      "Please confirm your attendance by January 25, 2026. We have reserved seats for you, and we look forward to celebrating with you. Your response helps us finalize our guest list and seating arrangements.\n\n[RSVP_LINK]Click here to RSVP[/RSVP_LINK]",
+      "RSVP: We kindly ask that you confirm your attendance by January 22, 2026. We have reserved seats especially for you, and it would bring us great joy to celebrate together. Your response will help us finalize our guest list and seating arrangements.\n\n[RSVP_LINK]Click here to RSVP[/RSVP_LINK]",
   },
   {
     question: "Can I bring a plus one?",
     answer:
-      "Invitation Only: As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation. Thank you for your understanding and cooperation.",
+      "It is our joy to celebrate this occasion with our closest loved ones. In keeping with the intimacy of the gathering, we kindly ask that attendance be limited to those named on the invitation. We are grateful for your understanding and look forward to sharing this special day together.\n\nFor those accompanied by non‑RSVP guests, we have thoughtfully arranged a designated waiting area in the basement parking for the duration of the ceremony and reception.",
   },
   {
     question: "Are children allowed?",
     answer:
-      "Adults-Only Event: We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event.\n\nChildren in our family and the entourage are the exception.",
+      "While we hold a special place in our hearts for your little ones, we wish to keep our celebration intimate and serene. We kindly request that the occasion be reserved for adults only.\n\nThe exception, of course, will be the children within our family and those who are part of the wedding entourage, whose presence adds joy and meaning to our day.",
   },
   {
     question: "What is your gift policy?",
     answer:
-      "Gift Policy: We kindly ask for no boxed gifts.\n\nYour presence is the most precious gift we could ask for. Monetary gifts are welcome but never expected; if you wish to give, you may use the details in our Gift Guide section.",
+      "Your presence at our wedding is the most treasured gift. If you wish to honor us with a gift, we kindly request a cash gift as a gesture of support for our new life together.\n\nAll bank details and the QR code can be found at the bottom of the invitation for your convenience.",
   },
   {
-    question: "Can I take photos during the ceremony?",
+    question: "Can I take photos during the ceremony and reception?",
     answer:
-      "Photo Policy: We'd love for everyone to be fully present.\n\nPlease avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories so you can simply enjoy the day with us.",
+      "We would love for everyone to be fully present as we celebrate this special day. While you are welcome to take photos, we kindly ask that you remain attentive to the ceremony and reception.\n\nPlease avoid posting photos during the celebration or ahead of time—our photographers will lovingly capture the memories so you can simply enjoy the moment with us.",
   },
   {
     question: "What if I have dietary restrictions or allergies?",
     answer:
-      "Please mention any dietary restrictions, allergies, or special meal requirements in the message field when you submit your RSVP.\n\nYou may also reach out to us directly so we can coordinate with our caterer and make sure you are comfortable and well-fed.",
+      "If you have any dietary restrictions, allergies, or special meal requests, we kindly invite you to mention them in the message field when submitting your RSVP.\n\nYou may also reach out to us directly, and we will gladly coordinate with our caterer to ensure you are comfortable and well cared for.",
   },
   {
     question: "How do I get to the venue?",
     answer:
-      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for Las Casas Quezon City.\n\nThe venue address is Las Casas Quezon City, Quezon City, Philippines.",
+      "Our celebration will take place at Casa Cilayko, Las Casas Filipinas de Acuzar – Quezon City, located at 134 Roosevelt Avenue, San Francisco del Monte, Quezon City, Metro Manila.\n\nGuests arriving via TNVS are kindly encouraged to use the official Las Casas Quezon City Google Maps pin to ensure a smooth and convenient drop-off at the venue. For those arriving by private car, directions and guest parking are readily available through Google Maps, with basement parking provided on-site.",
   },
   {
     question: "Is there parking available?",
     answer:
-      "The venue has parking available for guests.\n\nWe recommend arriving 15–20 minutes early so you can find parking, settle in comfortably, and not miss any part of the ceremony.",
+      "Yes, parking is available at Las Casas Filipinas de Acuzar – Quezon City for our guests. The venue offers on-site parking, including basement parking areas, with staff on hand to assist and guide vehicles upon arrival.\n\nAs parking spaces are limited, we kindly recommend arriving 20–30 minutes early to allow ample time to park, settle in comfortably, and fully enjoy every moment of the ceremony without rush or worry.",
   },
   {
     question: "What should I do if I need to cancel or update my RSVP?",
     answer:
-      "If your plans change, please let us know as soon as possible.\n\nYou can also update your RSVP by searching for your name in the RSVP section (Guest List) and submitting a new response.",
+      "If your plans change, we kindly ask that you let us know as soon as possible so we can make the necessary arrangements.\n\nYou may also update your RSVP by searching for your name in the RSVP section (Guest List) and submitting a new response. Your timely update is greatly appreciated and helps us ensure a smooth and joyful celebration for everyone.",
+  },
+  {
+    question: "Will there be medical or safety support at the venue?",
+    answer:
+      "For your comfort and peace of mind, a dedicated safety officer will be on duty at Las Casas throughout the celebration.\n\nShould you require any first aid assistance, please feel free to approach any of our servers or wedding coordinators, who will be more than happy to assist you promptly and with care.",
+  },
+  {
+    question: "Are there nearby hotel or accommodation options?",
+    answer:
+      "For guests seeking nearby accommodations, there are several hotel options conveniently located near Las Casas Filipinas de Acuzar – Quezon City, catering to a range of preferences and budgets.\n\nBudget‑friendly choices include Go Hotels Timog, Red Planet Timog Avenue, and Hop Inn Hotel Tomas Morato, all offering clean, comfortable stays within a short drive from the venue.\n\nFor those looking for mid‑range comfort, B Hotel Quezon City and Luxent Hotel provide stylish rooms and added amenities in the Tomas Morato and Timog areas.\n\nGuests who prefer a more upscale experience may consider Seda Vertis North, Park Inn by Radisson North EDSA, or ibis Styles Manila Araneta City, which offer refined accommodations, excellent dining options, and convenient access to major city landmarks—all within easy reach of the venue.",
   },
 ];
 

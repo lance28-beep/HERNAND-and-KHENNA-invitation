@@ -59,10 +59,10 @@ export function Details() {
         <div className="flex items-center justify-center gap-3 mb-4 sm:mb-5">
           <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
         </div>
-        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#FFE4E4]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
+        <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#FFE4E4]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
           February 8, 2026 · 4:00 PM
         </p>
-        <p className="mt-1 text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#FFE4E4]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
+        <p className="mt-1 text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#FFE4E4]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
           Las Casas Quezon City · Quezon City, Philippines (ceremony &amp; reception)
         </p>
       </div>
@@ -223,7 +223,7 @@ export function Details() {
           <h3 className="text-xl sm:text-2xl md:text-3xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] mb-3 sm:mb-4 uppercase tracking-[0.12em]">
             Attire Guidelines
           </h3>
-          <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#FFE4E4] font-light">
+          <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#FFE4E4] font-light">
             Filipiniana-inspired attire for our special day
           </p>
         </div>
@@ -240,12 +240,27 @@ export function Details() {
               </h4>
               
               {/* Guest Dress Code Text */}
-              <div className="text-center mb-7 sm:mb-8 md:mb-10">
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed mb-4">
-                  <span className="font-semibold">Ladies:</span> Filipiniana silhouettes in any shade you love, kindly avoiding red, white, and black.
+              <div className="text-center mb-7 sm:mb-8 md:mb-10 space-y-4">
+                <p className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] tracking-wide">
+                  Filipiniana-Themed Wedding Attire Guidelines
+                </p>
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed max-w-2xl mx-auto">
+                  We warmly invite our guests to join us in celebrating Filipino heritage with Filipiniana-inspired formal attire.
+                </p>
+                <p className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Guest Attire</span>
                 </p>
                 <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">Gentlemen:</span> Barong Tagalog or grey duct uniforms in your preferred tone.
+                  <span className="font-semibold">Gentlemen:</span> Barong Tagalog, slacks, or ceremonial uniform (e.g., grey duct or other formal uniform).
+                </p>
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Ladies:</span> Filipiniana gown.
+                </p>
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Colors and Style:</span> No restriction on colors except please avoid red, black, and white.
+                </p>
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Footwear:</span> Formal shoes or heels suitable for church and reception venues.
                 </p>
               </div>
 
@@ -256,58 +271,7 @@ export function Details() {
                 <div className="h-px w-12 sm:w-16 md:w-20 bg-[#9F8650]/40" />
               </div>
               
-              {/* Color Palette */}
-              <div className="text-center bg-gradient-to-br from-[#EFC0BC]/10 via-transparent to-[#FFE4E4]/10 rounded-xl p-5 sm:p-6 md:p-7">
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] uppercase tracking-wider mb-4 sm:mb-5">
-                  Suggested Color Palette
-                </p>
-                <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#676B57] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#676B57]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#676B57]/70">Sage Green</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#8C8E7C] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#8C8E7C]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#676B57]/70">Olive</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#B18B81] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#B18B81]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#676B57]/70">Terracotta</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#EFC0BC] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#EFC0BC]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#676B57]/70">Blush</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#FFE4E4] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#FFE4E4]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#676B57]/70">Soft Pink</span>
-                  </div>
-                </div>
-                <p className="mt-5 text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#676B57]/80 leading-relaxed">
-                  These are suggestions only—feel free to choose any Filipiniana look within this palette.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Principal Sponsors Attire */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-br from-[#9F8650]/15 to-[#676B57]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
-            
-            <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#9F8650]/30 shadow-lg hover:shadow-xl transition-all duration-300">
-              <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] mb-6 sm:mb-7 md:mb-8 uppercase tracking-[0.12em] text-center">
-                Principal Sponsors' Attire
-              </h4>
-              
-              {/* Sponsors Dress Code Text */}
-              <div className="text-center">
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed mb-4">
-                  <span className="font-semibold">Ninangs:</span> Champagne or Gold long gowns
-                </p>
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">Ninongs:</span> Barong Tagalog & Black Slacks
-                </p>
-              </div>
+              {/* Color Palette removed per updated guest attire guidelines */}
             </div>
           </div>
         </div>
@@ -323,45 +287,52 @@ export function Details() {
             
             {/* Reminders List */}
             <div className="space-y-5 sm:space-y-6 md:space-y-7">
-              {/* Attendance Limited */}
+              {/* Invitation Only */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">Invitation Only:</span> As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation.
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Invitation Only:</span> As we celebrate this moment with you, we kindly ask that attendance be limited to those named on the invitation.
                 </p>
               </div>
-
-              {/* No Boxed Gifts */}
+              
+              {/* Gift Policy */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">Gift Policy:</span> We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Gift Policy:</span> Your presence at our wedding is the most treasured gift. If you wish to honor us with a gift, we kindly request a cash gift as a gesture of support for our new life together.
                 </p>
               </div>
-
+              
               {/* Adults Only */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">Adults-Only Event:</span> We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Adults-Only Event:</span> We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception).
+                </p>
+              </div>
+              
+              {/* Photo Policy */}
+              <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Photo Policy:</span> We'd love for everyone to be fully present. We ask that guests refrain from posting photos during the celebration or ahead of time—our photographers will take care of the memories.
+                </p>
+              </div>
+              
+              {/* RSVP */}
+              <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">RSVP:</span> We would be delighted if you could confirm your attendance within five days of receiving your invitation, allowing us to plan a celebration with care and love.
                 </p>
               </div>
 
-              {/* No Photos */}
+              {/* Time */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">Photo Policy:</span> We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories.
-                </p>
-              </div>
-
-              {/* RSVP Contact */}
-              <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
-                  <span className="font-semibold">RSVP Contact:</span> Please reach out to Khenna &amp; Hernand (contact information to be updated)
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+                  <span className="font-semibold">Time:</span> We warmly request that everyone be present and ready by 3:40 PM, allowing us to start the ceremony promptly.
                 </p>
               </div>
             </div>
 
             {/* Thank You Note */}
             <div className="mt-7 sm:mt-8 md:mt-9 pt-6 sm:pt-7 md:pt-8 border-t border-[#9F8650]/20">
-              <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] text-center leading-relaxed italic">
+              <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] text-center leading-relaxed italic">
                 Thank you for your understanding and cooperation. We look forward to celebrating with you!
               </p>
             </div>

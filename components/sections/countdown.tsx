@@ -132,8 +132,8 @@ export function Countdown() {
                 <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
               </div>
               
-              {/* Save The Date text - Better readability */}
-              <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-bold text-[#FFE4E4] uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-3 sm:mb-4">
+              {/* Save The Date text - Extra large for strong emphasis */}
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-bold text-[#FFE4E4] uppercase tracking-[0.25em] sm:tracking-[0.35em] mb-5 sm:mb-6">
                 Save The Date
               </p>
               
@@ -147,25 +147,25 @@ export function Countdown() {
 
             {/* Date Section - More compact and readable */}
             <div className="text-center mb-6 sm:mb-8 md:mb-10">
-              {/* Month - Script style with earth tones, smaller for mobile */}
+              {/* Month - Script style with earth tones, very prominent */}
               <div className="mb-3 sm:mb-4 md:mb-5">
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-ephesis)] text-[#FFE4E4] leading-none">
+                <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[family-name:var(--font-ephesis)] text-[#FFE4E4] leading-none">
                   February
                 </p>
               </div>
               
-              {/* Day and Year - Horizontal layout with divider, more compact */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 mb-5 sm:mb-6">
-                {/* Day - Large and bold but scaled for mobile */}
-                <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] leading-none elegant-text-shadow">
+              {/* Day and Year - Horizontal layout with divider, very large emphasis */}
+              <div className="flex items-center justify-center gap-4 sm:gap-5 md:gap-6 mb-6 sm:mb-8">
+                {/* Day - Very large and bold for focal point */}
+                <p className="text-7xl sm:text-8xl md:text-9xl lg:text-[9.5rem] font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] leading-none elegant-text-shadow">
                   8
                 </p>
                 
-                {/* Vertical divider with earth tone gradient - shorter */}
-                <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-[#FFE4E4]/40 via-[#FFE4E4]/80 to-[#FFE4E4]/40" />
+                {/* Vertical divider with earth tone gradient - taller to match size */}
+                <div className="h-12 sm:h-14 md:h-18 lg:h-24 w-[2px] bg-gradient-to-b from-[#FFE4E4]/40 via-[#FFE4E4]/80 to-[#FFE4E4]/40" />
                 
-                {/* Year - Elegant and refined, smaller for mobile */}
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] leading-none">
+                {/* Year - Elegant and refined, significantly larger */}
+                <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[family-name:var(--font-crimson)] font-normal text-[#FFE4E4] leading-none">
                   2026
                 </p>
               </div>
@@ -180,8 +180,8 @@ export function Countdown() {
                 <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#FFE4E4] to-[#FFE4E4]" />
               </div>
               
-              {/* Time - Better readability */}
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] tracking-wide mb-3 sm:mb-4">
+              {/* Time - Extra large for clear readability */}
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] tracking-wide mb-4 sm:mb-6">
                 4:00 PM
               </p>
               

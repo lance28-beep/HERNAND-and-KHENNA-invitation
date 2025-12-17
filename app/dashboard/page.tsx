@@ -1891,7 +1891,7 @@ function EntourageModal({
                   list="role-title-options"
                   value={formData.RoleTitle}
                   onChange={(e) => setFormData({ ...formData, RoleTitle: e.target.value })}
-                  placeholder="e.g., Best Man, Maid of Honor"
+                  placeholder="e.g., Best Man, Matron of Honor"
                   className="w-full px-4 py-2 border border-[#676B57]/20 focus:border-[#676B57] rounded-xl text-sm font-sans placeholder:text-[#676B57]/40 transition-all duration-300 focus:ring-2 focus:ring-[#676B57]/10 bg-white"
                 />
                 {formData.RoleCategory && uniqueRoleTitles.length > 0 && (

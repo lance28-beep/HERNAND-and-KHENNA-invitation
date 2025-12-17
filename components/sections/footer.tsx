@@ -116,8 +116,8 @@ export function Footer() {
                 <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#EFC0BC] to-transparent" />
               </div>
 
-              {/* Save The Date text with elegant color */}
-              <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4 sm:mb-6">
+              {/* Save The Date text with elegant color - larger emphasis */}
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] uppercase tracking-[0.25em] sm:tracking-[0.35em] mb-5 sm:mb-7">
                 Save The Date
               </p>
 
@@ -129,31 +129,31 @@ export function Footer() {
 
             {/* Date Section - Elegant Layout */}
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              {/* Month - Elegant script style with earth tones */}
+              {/* Month - Elegant script style with earth tones, more prominent */}
               <div className="mb-4 sm:mb-5 md:mb-6">
-                <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-ephesis)] text-[#FFE4E4] leading-none drop-shadow-lg font-semibold">
+                <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[family-name:var(--font-ephesis)] text-[#FFE4E4] leading-none drop-shadow-lg font-semibold">
                   February
                 </p>
               </div>
 
-              {/* Day and Year - Horizontal layout with divider */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8">
-                {/* Day - Large and bold focal point with elegant color */}
-                <p className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-[family-name:var(--font-crimson)] font-bold text-[#FFE4E4] leading-none drop-shadow-lg">
+              {/* Day and Year - Horizontal layout with divider, very large emphasis */}
+              <div className="flex items-center justify-center gap-4 sm:gap-5 md:gap-7 mb-7 sm:mb-9">
+                {/* Day - Very large and bold focal point with elegant color */}
+                <p className="text-8xl sm:text-9xl md:text-[10rem] lg:text-[11rem] xl:text-[12rem] font-[family-name:var(--font-crimson)] font-bold text-[#FFE4E4] leading-none drop-shadow-lg">
                   8
                 </p>
 
-                {/* Vertical divider with earth tone gradient */}
-                <div className="h-16 sm:h-20 md:h-24 lg:h-28 w-px bg-gradient-to-b from-transparent via-[#EFC0BC] to-transparent" />
+                {/* Vertical divider with earth tone gradient - taller to match size */}
+                <div className="h-18 sm:h-22 md:h-26 lg:h-30 w-px bg-gradient-to-b from-transparent via-[#EFC0BC] to-transparent" />
 
-                {/* Year - Elegant and refined */}
-                <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-crimson)] font-light text-[#FFE4E4] leading-none drop-shadow-sm">
+                {/* Year - Elegant and refined, larger */}
+                <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[family-name:var(--font-crimson)] font-light text-[#FFE4E4] leading-none drop-shadow-sm">
                   2026
                 </p>
               </div>
 
-              {/* Day of Week */}
-              <p className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-medium text-[#FFE4E4] mb-6 sm:mb-8 tracking-wider">
+              {/* Day of Week - slightly larger */}
+              <p className="text-xl sm:text-2xl md:text-3xl font-[family-name:var(--font-crimson)] font-medium text-[#FFE4E4] mb-7 sm:mb-9 tracking-wider">
                 Sunday
               </p>
             </div>
@@ -165,8 +165,8 @@ export function Footer() {
                 <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#EFC0BC] to-transparent" />
               </div>
 
-              {/* Time with elegant styling */}
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] tracking-wider mb-4 sm:mb-5">
+              {/* Time with elegant styling - larger */}
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-[#FFE4E4] tracking-wider mb-5 sm:mb-6">
                 4:00 PM
               </p>
 

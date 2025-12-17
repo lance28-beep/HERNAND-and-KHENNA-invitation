@@ -5,6 +5,7 @@ import dynamic from "next/dynamic"
 import { AudioProvider } from "@/contexts/audio-context"
 import { Hero as MainHero } from "@/components/sections/hero"
 import { Welcome } from "@/components/sections/welcome"
+import { MeetTheCouple } from "@/components/sections/meet-the-couple"
 import { Countdown } from "@/components/sections/countdown"
 import { WeddingTimeline } from "@/components/sections/wedding-timeline"
 import { Narrative } from "@/components/sections/narrative"
@@ -63,6 +64,7 @@ export default function Home() {
               <MainHero />
               <Welcome />
               {/* <CoupleVideo /> */}
+              <MeetTheCouple />
               <Countdown />
               {/* <Narrative /> */}
               {/* <Gallery /> */}

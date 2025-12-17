@@ -67,9 +67,14 @@ export function Hero() {
           </div>
 
           {/* Request Text */}
-          <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#676B57] tracking-wide max-w-xl mx-auto px-6 sm:px-8 leading-relaxed">
-            request the honor of your presence as we are unified in marriage before our Lord God.
-          </p>
+          <div className="space-y-2 max-w-xl mx-auto px-6 sm:px-8">
+            <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#676B57] tracking-wide leading-relaxed">
+              request the honor of your presence as we are unified in marriage before our Lord God.
+            </p>
+            <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] tracking-wide leading-relaxed">
+              A celebration of Love, Life, and Forever
+            </p>
+          </div>
 
           {/* Date Display with elegant earth tone accents */}
           <div className="space-y-3 pt-4 sm:pt-6 px-4">
