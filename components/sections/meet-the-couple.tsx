@@ -27,26 +27,26 @@ export function MeetTheCouple() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-14 md:mb-16">
           {/* Bride */}
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 sm:p-7 md:p-8 border border-[#EFC0BC]/60 shadow-lg">
-            <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] tracking-[0.25em] uppercase text-[#B18B81] mb-3">
+            <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] tracking-[0.25em] uppercase text-[#B18B81] mb-3 text-center">
               The Bride
             </p>
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] mb-4">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] mb-4 text-center">
               Khenna
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed text-justify">
               Khenna is loving and selfless, the calm in the midst of chaos. She is the light that softens him—a dreamer who inspires Hernand to reach even greater heights. Her presence adds color and flavor to his life, turning ordinary moments into something extraordinary. To him, she is not just a partner, but the heart that makes life beautiful.
             </p>
           </div>
 
           {/* Groom */}
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 sm:p-7 md:p-8 border border-[#EFC0BC]/60 shadow-lg">
-            <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] tracking-[0.25em] uppercase text-[#B18B81] mb-3">
+            <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] tracking-[0.25em] uppercase text-[#B18B81] mb-3 text-center">
               The Groom
             </p>
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] mb-4">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] mb-4 text-center">
               Hernand
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed text-justify">
               Hernand is a man with a sharp, analytical mind and an insatiable love for learning. Calm and composed, he carries a firm sense of responsibility and an extraordinary patience that makes him a true pillar of strength. He is the protector of her peace, the believer in her wildest dreams, and a soul whose spirit balances strength with gentleness. To her, he is both a partner and an anchor—someone who steadies her in life’s storms while inspiring her to soar.
             </p>
           </div>

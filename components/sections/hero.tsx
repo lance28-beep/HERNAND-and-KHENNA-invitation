@@ -43,7 +43,7 @@ export function Hero() {
 
           {/* Opening Text */}
           <p className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-normal text-[#676B57] tracking-wide px-4">
-            Together with our families, we,
+            A celebration of Love, Life, and Forever
           </p>
 
           {/* Groom Name */}
@@ -72,7 +72,7 @@ export function Hero() {
               request the honor of your presence as we are unified in marriage before our Lord God.
             </p>
             <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] tracking-wide leading-relaxed">
-              A celebration of Love, Life, and Forever
+              {/* Intentionally left blank – previous tagline moved to opening text */}
             </p>
           </div>
 

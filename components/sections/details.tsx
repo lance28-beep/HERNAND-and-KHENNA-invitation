@@ -26,16 +26,16 @@ export function Details() {
   }
 
   // Updated venue information
-  const ceremonyVenueName = "Las Casas Quezon City"
+  const ceremonyVenueName = "Casa Cilayko, Las Casas Filipinas de Acuzar – Quezon City"
   const ceremonyVenueDetail = ""
   const ceremonyAddress = "134 Roosevelt Avenue, San Francisco del Monte, Quezon City, Metro Manila"
-  const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyAddress}`
+  const ceremonyVenue = ceremonyVenueName
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(ceremonyVenue)}`
 
-  const receptionVenueName = "Las Casas Quezon City"
+  const receptionVenueName = "Casa Cilayko, Las Casas Filipinas de Acuzar – Quezon City"
   const receptionVenueDetail = ""
   const receptionAddress = "134 Roosevelt Avenue, San Francisco del Monte, Quezon City, Metro Manila"
-  const receptionVenue = `${receptionVenueName}, ${receptionAddress}`
+  const receptionVenue = receptionVenueName
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(receptionVenue)}`
 
   const openInMaps = (link: string) => {
@@ -63,7 +63,7 @@ export function Details() {
           February 8, 2026 · 4:00 PM
         </p>
         <p className="mt-1 text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#FFE4E4]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
-          Las Casas Quezon City · Quezon City, Philippines (ceremony &amp; reception)
+          Casa Cilayko, Las Casas Filipinas de Acuzar – Quezon City
         </p>
       </div>
 
@@ -159,9 +159,7 @@ export function Details() {
                         {ceremonyVenueDetail}
                       </p>
                     )}
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#676B57]/70 leading-relaxed">
-                      {ceremonyAddress}
-                    </p>
+                    {/* Address intentionally omitted per content update */}
                   </div>
                   {/* QR Code for Ceremony - Right side */}
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
@@ -240,11 +238,11 @@ export function Details() {
               </h4>
               
               {/* Guest Dress Code Text */}
-              <div className="text-center mb-7 sm:mb-8 md:mb-10 space-y-4">
+              <div className="text-center mb-8 sm:mb-10 md:mb-12 space-y-5 sm:space-y-6 max-w-3xl mx-auto">
                 <p className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#676B57] tracking-wide">
                   Filipiniana-Themed Wedding Attire Guidelines
                 </p>
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed max-w-2xl mx-auto">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
                   We warmly invite our guests to join us in celebrating Filipino heritage with Filipiniana-inspired formal attire.
                 </p>
                 <p className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] text-[#676B57] leading-relaxed">
